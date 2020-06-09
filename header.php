@@ -16,44 +16,121 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
 	<?php wp_head(); ?>
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
 </head>
+<style>
+#masthead {
+            background-image: url('<?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); echo $featured_img_url;?>');           
+			background-color: #aaa;
+			background-blend-mode: multiply;
+			height: 90vh;
+			background-size: cover;
+}
+<?php
+if(is_archive() or !is_home() ) {
+?>
+
+	#masthead {
+		height: 60vh;
+		background-image: url('<?php $term = get_queried_object();
+		
+		if(is_archive()) {
+			$featured_img_url = get_field('background_image' , $term); echo $featured_img_url;
+		} else {
+			$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); echo $featured_img_url;
+
+		}
+ 
+ 
+ 
+ ?>');           
+		
+		
+	
+}
+<?php
+
+}?>
+
+</style>
+
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'goldcrest' ); ?></a>
+	<div id="top-bar-outer" class="top-bar-outer">	
+		<div class="top-bar container">
+				<div class="site-branding">
+					<?php
+					the_custom_logo();
+					?>
+				</div><!-- .site-branding -->
 
+				<nav id="site-navigation" class="main-navigation">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						)
+					);
+					?>
+				</nav><!-- #site-navigation -->
+		</div>
+	<hr >
+	</div>
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$goldcrest_description = get_bloginfo( 'description', 'display' );
-			if ( $goldcrest_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $goldcrest_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+		
+		<hr>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'goldcrest' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
+		<?php if (is_front_page()): ?>
+			<div class="header-cta-container ">
+				<header class="header-cta-section txt-center ">
+					<h1 class="txt-center">Find a property</h1>
+					<p>We're your source for local listings</p>
+					<div class="buttons-container">
+						<a href="#">
+							<div class="button button_gold">
+								For Relocate
+							</div>
+						</a>
+
+						<a href="#">
+							<div class="button button_white">
+								For Invest
+							</div>
+						</a>
+					</div>
+					
+				</header>
+			</div>
+		<?php else: ?>
+			<div class="page-title-container">
+				<div class="page-title  txt-center ">
+					<h1 class="txt-center-after"><?php $custom_header = get_field('custom_header'); if($custom_header) {
+						echo $custom_header; } else {
+							 get_the_title(); single_term_title(); }?></h1>
+				</div>
+			</div>
+			
+		<?php endif; ?>
+		
+		
+		
+<?php 
+/* the_post_navigation(
+	array(
+		'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'goldcrest' ) . '</span> <span class="nav-title">%title</span>',
+		'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'goldcrest' ) . '</span> <span class="nav-title">%title</span>',
+	)
+);
+*/
+?>
+		
 	</header><!-- #masthead -->

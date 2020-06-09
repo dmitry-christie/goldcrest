@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="entry-header container">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -29,9 +29,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php goldcrest_post_thumbnail(); ?>
-
-	<div class="entry-content">
+	<div class="entry-content container">
 		<?php
 		the_content(
 			sprintf(
@@ -57,7 +55,5 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php goldcrest_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	
 </article><!-- #post-<?php the_ID(); ?> -->
