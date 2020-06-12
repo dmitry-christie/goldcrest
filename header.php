@@ -31,31 +31,19 @@
 			height: 90vh;
 			background-size: cover;
 }
-<?php
-if(is_archive() or !is_home() ) {
-?>
+<?php if(is_archive() or !is_front_page() ) { ?>
 
 	#masthead {
 		height: 60vh;
-		background-image: url('<?php $term = get_queried_object();
-		
+		background-image: url('<?php 
+		$term = get_queried_object();
 		if(is_archive()) {
 			$featured_img_url = get_field('background_image' , $term); echo $featured_img_url;
 		} else {
 			$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); echo $featured_img_url;
-
-		}
- 
- 
- 
- ?>');           
-		
-		
-	
+		} ?>');           
 }
-<?php
-
-}?>
+<?php } ?>
 
 </style>
 
@@ -113,9 +101,16 @@ if(is_archive() or !is_home() ) {
 		<?php else: ?>
 			<div class="page-title-container">
 				<div class="page-title  txt-center ">
-					<h1 class="txt-center-after"><?php $custom_header = get_field('custom_header'); if($custom_header) {
-						echo $custom_header; } else {
-							 get_the_title(); single_term_title(); }?></h1>
+					<h1 class="txt-center-after">
+						<?php 
+						$custom_header = get_field('custom_header'); 
+						if($custom_header) {
+							echo $custom_header; 
+						} else {
+							single_term_title();
+							single_post_title(); 
+						}?>
+					</h1>
 				</div>
 			</div>
 			

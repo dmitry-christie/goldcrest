@@ -9,25 +9,20 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header container">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+<style>
+.entry-content {
+	margin-top: -3em;
+	background: white;
+	padding: 3em;
+}
 
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				goldcrest_posted_on();
-				goldcrest_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+.entry-content h2:first-of-type {
+	margin-top: 0px;
+}
+</style>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	
 
 	<div class="entry-content container">
 		<?php

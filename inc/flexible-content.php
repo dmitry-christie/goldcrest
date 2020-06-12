@@ -1,4 +1,6 @@
 
+<?php $k = 0; ?>
+
     <?php if( have_rows('flexible-content-pages') ): ?>
         <?php while( have_rows('flexible-content-pages') ): the_row(); ?>
 
@@ -11,7 +13,7 @@
                     
                     $add_grey_padding = get_sub_field('add_grey_padding');
                     if ($add_grey_padding): ?>
-                    <div class="grey-padding">
+                    <div  class="grey-padding ">
 
                     
                 <?php endif; ?>
@@ -262,22 +264,44 @@
             <!-- END blurbs type 1 -->
 
 
-            <!-- blurbs type 2 -->
-                    <?php elseif( get_row_layout() == 'blurbs_type_2' ): ?>
-                        <h2 class="section-header sm-gold-line space"> <?php the_sub_field('header'); ?> </h2>
+             <!-- blurbs type 2 -->
+             <?php elseif( get_row_layout() == 'blurbs_type_2' ): ?>
+                <?php 
+                    
+                    $add_grey_padding = get_sub_field('add_grey_padding');
+                    if ($add_grey_padding): ?>
+                    <div class="grey-padding">
+
+                    
+                <?php endif; ?>
+
+
+
+             <?php $header = get_sub_field('header'); if($header) { ?><h2 class="section-header txt-center sm-gold-line space" data-aos="fade-up"> <?php the_sub_field('header'); ?> </h6> <?php } ?>
                         <?php if( have_rows('blurb_type_2_repeater') ): ?>
-                            <div class="blurb_type_2_container blurbs">
+                            <div class="blurbs blurbs-type-2 space container" data-aos="fade-up">
+
+                                <?php $k = 0; ?>
                                 <?php while ( have_rows('blurb_type_2_repeater') ) : the_row(); ?>
-                                    <div class="blurb">
+
+                                    <div class="blurb txt-center blurb-<?php echo $k; ?> in-row-<?php if($k < 4) { echo '1';} elseif ($k <8){  echo '2';} elseif( $k < 12) { echo '3';}?>">
                                         <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/icons/GC-ICON-' . $icon . '.png'; ?>">
-                                        <h3 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h3>
-                                        <p class="blurb-text txt-center ">
-                                            <?php the_sub_field('text'); ?>
-                                        </p>
+                                        <?php $header = get_sub_field('header'); if($header) { ?><h3 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h3> <?php } ?>
+                                        <span> <?php the_sub_field('text'); ?></span>
                                     </div>
+
+                                    <?php $k++ ?>
+                                    
+                                   
                                     <?php endwhile; ?>
                             </div>
                         <?php endif; ?>
+            
+                <?php                    $add_grey_padding = get_sub_field('add_grey_padding');
+ if ($add_grey_padding): ?>
+                        
+                    </div> <!-- grey padding -->
+                <?php endif; ?>
             <!-- END blurbs type 2 -->
 
 
@@ -308,32 +332,7 @@
 
 
 
-                  <!-- As seen On -->
-                  <?php elseif( get_row_layout() == 'as_seen_on' ): ?>
-                    
-
-                    <h2 class="section-header txt-center sm-gold-line as-seen-header space" data-aos="fade-up">As seen on</h2>
-                        <div class="as-seen-outer" data-aos="fade-up">
-                            <div class="as-seen container">
-                                <div class="source">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/exame.png">
-
-                                </div>
-                                <div class="source">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/veja.png">
-
-                                </div>
-                                <div class="source">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/info-money.png">
-
-                                </div>
-                                <div class="source">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/forbes.png">
-
-                                </div>
-                            </div>
-                        </div>
-            <!-- END As seen On -->
+  
 
 
 
@@ -458,14 +457,9 @@
              <!-- Local Experts Guide -->
              <?php elseif( get_row_layout() == 'local_experts_guides' ): ?>
              <div class="guides-outer container " data-aos="fade-up">
-
                 <?php if(get_sub_field('section_header')) { ?><h2 class="section-header txt-center sm-gold-line"> <?php the_sub_field('section_header'); ?> </h2><?php } ?>
                 <?php if(get_sub_field('description')) { ?><p class="description txt-center"> <?php the_sub_field('description'); ?> </p><?php } ?>
-
-
                 <div class="guides">
-
-
                 <?php
                         $args = array(
                             'post_type' => 'post',
@@ -474,9 +468,6 @@
 
                         if(get_sub_field('guides_category')) {
                                   $args['category_name'] = get_sub_field('guides_category');
-                                  
-                                
-
                         }
 
                        
@@ -600,7 +591,7 @@
             <!-- END Slider -->
 
 
-                <!-- Slider -->
+                <!-- TWO buttons -->
 
             <?php elseif( get_row_layout() == 'two_buttons' ): ?>
            
@@ -635,7 +626,7 @@
            </div>                                                
 
 
-            <!-- END Slider -->
+            <!-- END two buttons -->
 
 
              <!-- Tiles -->
@@ -681,7 +672,7 @@
             <!-- END Tiles -->
             
 
-              <!-- Tiles -->
+              <!-- Contact form -->
 
              
 
@@ -713,7 +704,7 @@
                     </div>
                 </div>
 
-            <!-- END Tiles -->
+            <!-- END contact form -->
 
              
 

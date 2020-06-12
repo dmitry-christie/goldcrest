@@ -223,6 +223,10 @@ textarea {
 	margin: 0;
 }
 
+textarea {
+	min-height: 6em !important;
+}
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -418,7 +422,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -1131,27 +1135,37 @@ margin: 0 auto;
 	text-align: center;
 }
 
-.header-cta-section h1:after, .page-title  h1:after {
+.header-cta-section h1:after, .page-title  h1:after, ._form-title:after {
 	content: '';
 	height: 0px;
     display: block;
     margin-top: 20px;
-    max-width: 35px;
-	border: 4px solid white;
+    max-width: 25px;
+	border: 2px solid white;
 
 }
 
 
 
-.section-header, .visual-editor h2 {
+.section-header, .visual-editor h2, .post .entry-content h2 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 2em;
 	color: #004162;
 	margin-top: 0px;
 }
 
+.post .entry-content h2, .post .entry-content h3, .post .entry-content h4, .post .entry-content h5, .post .entry-content h6  {
+	color: #004162;
 
-.visual-editor h2:after {
+}
+
+.post .entry-content a, .post .entry-content a:visited, .post .entry-content a:hover {
+	color: #004162;
+
+}
+
+
+.visual-editor h2:after, .post .entry-content h2:after {
 	content: ' ';
     display: block;
     margin-top: 7px;
@@ -1247,6 +1261,24 @@ font-family: 'Roboto', sans-serif;
 font-weight: 300;
 }
 
+.blurbs-type-2 .blurb {
+	min-width: 24%;
+	border: 1px solid #d5d6d7;
+	border-radius: 4px;
+	padding: 2em 0.5em;
+	
+}
+
+.blurbs-type-2 .sm-gold-line:after {
+	max-width: 15px;
+    border: 1px solid #b5a160;
+}
+
+.blurbs-type-2 .in-row-2 {
+	margin-top: 1em !important;
+	margin: 0 auto;
+}
+
 .space {
     margin-bottom: 34.528px !important;
 }
@@ -1308,6 +1340,10 @@ footer .menu .separator {
 
 .copyright-container p {
 	margin: 1.5em 0px;
+}
+
+.guides-outer  {
+	margin-bottom: 2em;
 }
 
 .guides-outer > p{
@@ -1392,30 +1428,125 @@ footer .menu .separator {
 .form-block .left {
 	background-size: cover;
 }
-.form-block .right {
-	background: #013552;
+.form-block .right, .pum-container {
+	background: #013552 !important;
+}
+
+.pum-theme-157 .pum-content + .pum-close, .pum-theme-default-theme .pum-content + .pum-close, .pum-theme-157 .pum-content + .pum-close:hover, .pum-theme-default-theme .pum-content + .pum-close:hover {
+	top: 0.5em;
+	right: 0.5em;
+	font-size: 12px !important;
+	line-height: 12px !important;
+	background: none !important;
 }
 
 .form-block .right form {
 	background: #013552 !important;
 	color: white !important;
-	padding: 1em;
+	padding: 3em 2em;
 
 }
+
+.form-block ._row, .pum ._row {
+	display: flex;
+	align-items: center;
+	margin-right: 1em;
+	
+
+}
+
+._row label {
+	display: block !important;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	margin-left: 0.5em;
+	font-size: 0.7em;
+
+}
+
+input[type='radio']:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #d1d3d1;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #e0c575;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+._field48 {
+	display: flex;
+	margin: 0.5em 0px;
+}
+
 
 ._form-title {
 	color: white !important;
 	font-family: 'Raleway', sans-serif !important;
-	font-size: 1.5em !important;
+	font-size: 2em !important;
+	text-transform: none !important;
+	margin-bottom: 1em;
+	font-weight: 700;
 }
 
-.form-block .right form label, ._marketing-by{
+._form-content ._field-wrapper input, ._form-content ._field-wrapper textarea {
+	border-radius: 0px !important;
+	margin: 0.25em 0px;
+	min-height: 4em;
+	width: 100%;
+}
+
+.form-block input, div[class^=_form] input, div[class^=_form] textarea, .form-block textarea, div[class^=_form] select, .form-block select, div[class^=_form] input:focus, .form-block input:focus, .form-block textarea:focus, div[class^=_form] textarea:focus, .form-block select:focus, div[class^=_form] select:focus {
+	color: #6d6e70;
+	text-transform: uppercase;
+	font-size: 0.7em;
+}
+
+._button-wrapper button {
+	width: 100%;
+	font-size: 0.7em;
+	background-color: #e0c575;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 0px;
+	border: 0px solid;
+	padding: 1em 0px;
+	min-height: 4em;
+}
+
+
+
+
+.form-block .right form label, ._marketing-by, .pum label{
 	display: none;
 
 }
 
 ._field48 label {
 	display: flex;
+}
+
+._form-label {
+	display: none !important;
 }
 
 
@@ -1624,3 +1755,47 @@ footer .menu .separator {
 	  background-color: #aaa;
 	  background-blend-mode: multiply;
   }
+
+
+  .tablepress {
+	  margin: 2em 0px;
+  }
+
+  .tablepress td {
+	vertical-align: middle !important;
+
+  }
+  .tablepress, .tablepress td {
+	  border: 1px solid #edeeee !important;
+  }
+  .tablepress .column-1 {
+	text-transform: uppercase;
+	color: #b5a160;
+	padding-left: 1.5em !important;
+}
+
+td {
+	color: #6d6e70;
+}
+ 
+  .tablepress .row-1 td {
+	  height: 4em;
+	  color: #004162 !important;
+	  font-family: 'Robot', sans-serif;
+	  text-transform: uppercase; 
+
+  }
+ 
+
+  .tablepress .row-1 .column-1 {
+	color: #004162  ;
+	
+
+
+}
+
+ 
+
+     .tablepress .column-2,   .tablepress .column-3,   .tablepress .column-4,   .tablepress .column-5,   .tablepress .column-6,   .tablepress .column-7,   .tablepress .column-8,   .tablepress .column-9,   .tablepress .column-10,   .tablepress .column-11,   .tablepress .column-12,   .tablepress .column-13,   .tablepress .column-14,   .tablepress .column-15 {
+	text-align: center;
+}
