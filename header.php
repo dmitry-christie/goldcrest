@@ -111,6 +111,12 @@
 							single_post_title(); 
 						}?>
 					</h1>
+					<?php if (is_single()): ?>
+						<div class="post-meta"> BY <?php $author_name = get_author_name(); echo $author_name; ?> Published on <?php echo get_the_date( 'F j, Y' ); ?>
+. Updated: <?php the_modified_date(); ?></div>
+					<?php endif; ?>
+
+
 				</div>
 			</div>
 			

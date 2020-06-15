@@ -64,12 +64,16 @@ get_header();
 
 					</div>
 
+
+
 					
 				</article>
-				</div>
-	<!-- #post-<?php the_ID(); ?> -->
-<?php
 
+				</div>
+
+	<!-- #post-<?php the_ID(); ?> -->
+
+<?php
 			endwhile;
 
 			/* ajax */
@@ -82,6 +86,12 @@ get_header();
 		
 
 	</main><!-- #main -->
+
+	<div class="archive-container container archive-ajax">
+
+	<?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" offset="10" posts_per_page="3"]'); ?>
+	</div>
+
 
 	<style>
                     .form-block .left {

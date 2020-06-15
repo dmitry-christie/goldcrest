@@ -26,10 +26,13 @@
 
 	<div class="entry-content container">
 		<?php
-		the_content(
+$stylesheet_root = get_stylesheet_directory();
+include( $stylesheet_root . '/inc/flexible-content.php' );
+
+	/*	the_content(
 			sprintf(
 				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
+					 translators: %s: Name of current post. Only visible to screen readers 
 					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'goldcrest' ),
 					array(
 						'span' => array(
@@ -47,8 +50,90 @@
 				'after'  => '</div>',
 			)
 		);
-		?>
+		*/?>
+
+		
 	</div><!-- .entry-content -->
 
 	
 </article><!-- #post-<?php the_ID(); ?> -->
+<div class="guides-outer container posts_guides " data-aos="fade-up">
+                <h2 class="section-header txt-center sm-gold-line"> Related Artciles </h2>
+                <div class="guides">
+                <?php
+                        $args = array(
+                            'post_type' => 'post',
+							'posts_per_page' => 3,
+							'category__in' => wp_get_post_categories($post->ID),
+                        );
+
+                        
+
+                       
+
+                        $post_query = new WP_Query($args);
+
+                        if($post_query->have_posts() ) {
+                            while($post_query->have_posts() ) {
+                                $post_query->the_post();
+                                ?>
+
+                                <div style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>')">
+                                    <div class="guide colour">
+
+                                        <h5><?php the_title(); ?></h5>
+                                        <a href="<?php the_permalink(); ?>">
+                                            <div ><?php $read_more_global_button_text = get_field('read_more_global_button_text', 'option'); 
+                            if ($read_more_global_button_text) {
+                                echo $read_more_global_button_text; 
+                            } else { 
+                                echo 'Read more '; 
+                            } 
+                            ?><img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+
+                              
+                                <?php
+                                }
+                            }
+                            wp_reset_query();
+                    ?>
+
+
+
+                  
+                   
+                </div>
+
+                </div>
+				<style>
+                    .form-block .left {
+                        background-image: url('<?php the_sub_field('image-form', 'options'); ?>'); 
+                    }
+
+                   
+                </style>
+                <div class="form-block ">
+                    <div class="left">
+                       
+
+                      
+                        
+
+                    </div>
+                    <div class="right">
+                        <div class="form-container">
+                            <?php $form = get_sub_field('form');
+                        echo do_shortcode($form);
+                        ?>
+                        </div>
+
+                    
+                        
+                    </div>
+                </div>
+

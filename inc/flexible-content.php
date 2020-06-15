@@ -324,6 +324,49 @@
             <!-- END blurbs type 3 -->
 
 
+             <!-- Step by step -->
+             <?php elseif( get_row_layout() == 'step_by_step' ): ?>
+                <div class="steps-container container">    
+                    <h2 class="section-header txt-center sm-gold-line space"> 
+                        <?php the_sub_field('section_header'); ?> 
+                    </h2>
+                    <?php 
+                        $section_description = get_sub_field('section_description'); 
+                        if($section_description) {
+                            echo  $section_description;
+                        }
+                    ?>
+
+                    <?php $k = 1; ?>
+                    <?php if( have_rows('step') ): ?>
+                        <div class="steps">
+                            <?php while ( have_rows('step') ) : the_row(); ?>
+                                <div class="step">
+                                    <div class="arrow"><img src="</div>
+                                    <div class="number"><?php echo $k; ?></div>
+                                    <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/icons/GC-ICON-' . $icon . '.png'; ?>">
+                                    <h3 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h3>
+                                    <p class="blurb-text txt-center ">
+                                        <?php the_sub_field('text'); ?>
+                                    </p>
+                                </div>
+                                <?php $k++; ?> 
+                            <?php endwhile; ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php $closing_remarks = get_sub_field('closing_remarks');
+                            if($closing_remarks) {
+                                echo '<div class="closing-remarkts space">' . $closing_remarks . '</div>';
+                            }
+                    ?>
+                </div>
+            <!-- END step by step -->
+
+
+            
+
+
 
                  
 

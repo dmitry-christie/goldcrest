@@ -97,7 +97,7 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-	font-size: 2em;
+	font-size: 2.3em;
 	margin: 0.67em 0;
 }
 
@@ -1047,6 +1047,19 @@ left: -13px;
 	margin: 0 auto;
 }
 
+.post .container {
+	max-width: 100%;
+}
+
+.posts_guides {
+	padding: 0em 3em;
+}
+
+.posts_guides  .guides > div {
+	width: 300px;
+	height: 300px;
+}
+
 .top-bar-outer {
 	position: fixed;
 	width: 100%;
@@ -1164,6 +1177,12 @@ margin: 0 auto;
 
 }
 
+.post-meta {
+	color: white;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
 
 .visual-editor h2:after, .post .entry-content h2:after {
 	content: ' ';
@@ -1236,7 +1255,7 @@ header .button {
 
 
 
-.blurbs {
+.blurbs, .steps {
 	display: flex;
     justify-content: space-between;
    
@@ -1247,6 +1266,10 @@ header .button {
 	max-width: 19%;
 	background: white;
 	padding: 15px;
+}
+
+.steps .step {
+	max-width: 24%;
 }
 
 .blurb-header {
@@ -1280,7 +1303,9 @@ font-weight: 300;
 }
 
 .space {
-    margin-bottom: 34.528px !important;
+	margin-bottom: 34.528px !important;
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 
@@ -1391,10 +1416,7 @@ footer .menu .separator {
 
 
 
-.space {
-	margin-top: 2em;
-	margin-bottom: 2em;
-}
+
 
 .tiles .left {
 	min-height: 400px;
