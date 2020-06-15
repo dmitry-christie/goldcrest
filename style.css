@@ -1541,11 +1541,37 @@ footer .menu .separator {
 	background: none !important;
 }
 
+
+
 .form-block .right form {
 	background: #013552 !important;
 	color: white !important;
 	padding: 3em 2em;
 
+}
+
+
+.contact-us {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: -4em;
+	margin-bottom: 4em;
+}
+
+.contact-us .right {
+	background: #013552 !important;
+	color: white !important;
+	padding: 3em 2em;
+}
+
+.contact-us > div {
+	width: 50%;
+}
+
+.contact-us .left {
+	padding-top: 6em;
+	padding-right: 4em;
 }
 
 .form-block ._row, .pum ._row {

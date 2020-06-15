@@ -780,6 +780,35 @@
 
             <!-- END contact form -->
 
+
+               <!-- Contact form (contact us) -->
+
+             
+
+               <?php elseif( get_row_layout() == 'contact_form_contac_us' ): ?>
+          
+                <div class="container contact-us">
+                    <div class="left">
+                       <?php the_sub_field('Text-left'); ?>
+
+                      
+                        
+
+                    </div>
+                    <div class="right">
+                        <div class="form-container">
+                            <?php $form = get_sub_field('form');
+                        echo do_shortcode($form);
+                        ?>
+                        </div>
+
+                    
+                        
+                    </div>
+                </div>
+
+            <!-- END contact form -->
+
              
 
 

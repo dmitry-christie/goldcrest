@@ -26,23 +26,10 @@
 
 	<div class="entry-content container">
 		<?php
-$stylesheet_root = get_stylesheet_directory();
-include( $stylesheet_root . '/inc/flexible-content.php' );
+/* $stylesheet_root = get_stylesheet_directory();
+include( $stylesheet_root . '/inc/flexible-content.php' ); */
 
-	/*	the_content(
-			sprintf(
-				wp_kses(
-					 translators: %s: Name of current post. Only visible to screen readers 
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'goldcrest' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
+	the_content();
 
 		wp_link_pages(
 			array(
@@ -50,7 +37,7 @@ include( $stylesheet_root . '/inc/flexible-content.php' );
 				'after'  => '</div>',
 			)
 		);
-		*/?>
+		?>
 
 		
 	</div><!-- .entry-content -->
