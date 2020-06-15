@@ -1268,9 +1268,67 @@ header .button {
 	padding: 15px;
 }
 
+
+.steps {
+	margin-top: 2em;
+}
+
+.steps .row-2 {
+	margin-top: 2em;
+	margin: 0 auto;
+}
+
 .steps .step {
 	max-width: 24%;
+	display: flex;
+
 }
+
+.step .arrow {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.step .number {
+	min-width: 1.2em;
+}
+
+.step .step-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.step .number {
+	color: #004162;
+	font-size: 1.1em;
+}
+
+.step .blurb-text {
+	margin-top: 0px;
+}
+
+.step .blurb-header {
+	margin-bottom: 0px;
+}
+
+.step-content img {
+	height: 6em; 
+	width: auto;
+}
+.arrow img {
+	width: 1.2em;
+    height: 2em;
+    max-width: 1.2em;
+
+}
+
+.arrow-1 {
+	visibility: hidden;
+}
+
 
 .blurb-header {
 	font-family: 'Raleway', sans-serif;
@@ -1634,7 +1692,7 @@ input[type='radio']:checked:after {
 	min-width: 350px;
 	height: 350px;
 	border-radius: 2px;
-	background-size: contain;
+	background-size: cover;
 	
 }
 

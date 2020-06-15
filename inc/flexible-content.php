@@ -337,20 +337,25 @@
                         }
                     ?>
 
-                    <?php $k = 1; ?>
+                    <?php $k_step_by_step = 1; ?>
                     <?php if( have_rows('step') ): ?>
                         <div class="steps">
                             <?php while ( have_rows('step') ) : the_row(); ?>
-                                <div class="step">
-                                    <div class="arrow"><img src="</div>
-                                    <div class="number"><?php echo $k; ?></div>
-                                    <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/icons/GC-ICON-' . $icon . '.png'; ?>">
-                                    <h3 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h3>
-                                    <p class="blurb-text txt-center ">
-                                        <?php the_sub_field('text'); ?>
-                                    </p>
+                                <div class="step step-<?php echo $k_step_by_step; ?> row-<?php if(5 <=
+                                 $k_step_by_step) { echo '2';} else { echo '1';}?>">
+                             
+
+<div class="arrow arrow-<?php echo $k_step_by_step; ?>"><img src="<?php echo get_template_directory_uri() . "/img/arrow-step-by-step.png"; ?>"></div>
+                                    <div class="number"><?php echo $k_step_by_step; ?></div>
+                                    <div class="step-content">
+                                        <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/icons/GC-ICON-' . $icon . '.png'; ?>">
+                                        <h3 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h3>
+                                        <p class="blurb-text txt-center ">
+                                            <?php the_sub_field('text'); ?>
+                                        </p>
+                                    </div>
                                 </div>
-                                <?php $k++; ?> 
+                                <?php $k_step_by_step++; ?> 
                             <?php endwhile; ?>
                         </div>
                     <?php endif; ?>

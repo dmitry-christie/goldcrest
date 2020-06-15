@@ -29,7 +29,7 @@ get_header();
 				?>
 				<div class="loop-item-container">
 					<a href="<?php the_permalink(); ?>">
-						<div class="thumbnail" style="background: url('<?php echo get_the_post_thumbnail_url(); ?>'">
+						<div class="thumbnail" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>'">
 							
 						</div>
 					</a>
@@ -62,12 +62,7 @@ get_header();
                                         
 						</a>
 
-					</div>
-
-
-
-					
-				</article>
+					</div>				
 
 				</div>
 
