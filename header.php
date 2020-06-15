@@ -70,6 +70,13 @@
 					);
 					?>
 				</nav><!-- #site-navigation -->
+				<div id="toggle">
+					<img alt="Residency and citizenship by investment" src="<?php echo get_template_directory_uri(); ?>/img/hamburger.png"></div>
+					<div id="popout">
+						<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_class' => 'nav-menu-mobile' ) ); ?>
+					</div>
+
+				</div>
 		</div>
 	<hr >
 	</div>
@@ -80,18 +87,18 @@
 		<?php if (is_front_page()): ?>
 			<div class="header-cta-container ">
 				<header class="header-cta-section txt-center ">
-					<h1 class="txt-center">Find a property</h1>
-					<p>We're your source for local listings</p>
+					<h1 class="txt-center"><?php the_field('header');?></h1>
+					<p><?php the_field('sub_header');?></p>
 					<div class="buttons-container">
-						<a href="#">
+						<a href="<?php the_field('button_1-url');?>">
 							<div class="button button_gold">
-								For Relocate
+							<?php the_field('button_1-text');?>
 							</div>
 						</a>
 
-						<a href="#">
+						<a href="<?php the_field('button_2-url');?>">
 							<div class="button button_white">
-								For Invest
+							<?php the_field('button_2-text');?>
 							</div>
 						</a>
 					</div>

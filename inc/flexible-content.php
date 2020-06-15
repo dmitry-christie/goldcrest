@@ -679,18 +679,18 @@
            <div class="two-buttons">
             <div class="header-cta-container ">
                     <header class="header-cta-section txt-center ">
-                        <h1 class="txt-center">Find a property</h1>
-                        <p>We're your source for local listings</p>
+                        <h1 class="txt-center"><?php the_sub_field('header'); ?></h1>
+                        <p><?php the_sub_field('sub_header'); ?></p>
                         <div class="buttons-container">
-                            <a href="#">
+                            <a href="<?php the_sub_field('button_1_url'); ?>">
                                 <div class="button button_gold">
-                                    For Relocate
+                                    <?php the_sub_field('button_1_text'); ?>
                                 </div>
                             </a>
 
-                            <a href="#">
+                            <a href="<?php the_sub_field('button_2_url'); ?>">
                                 <div class="button button_white">
-                                    For Invest
+                                <?php the_sub_field('button_2_text'); ?>
                                 </div>
                             </a>
                         </div>
@@ -729,7 +729,7 @@
                             ?>
                                 <a href="<?php the_sub_field('button_-_url');?>">
                                     <div class="button button_blue">        
-                                        Get in Touch
+                                        <?php echo $button_text; ?>
                                     </div>
                                 </a>
                             <?php
@@ -753,24 +753,42 @@
               <?php elseif( get_row_layout() == 'contact_form' ): ?>
                 <style>
                     .form-block .left {
-                        background-image: url('<?php the_sub_field('image-left'); ?>'); 
-                    }
-
+                        background-image: url('<?php
+                            $image_left = get_sub_field("image-left");
+                            if($image_left) {
+                                the_sub_field("image-left");            
+                            } else {
+                                the_sub_field("global_image_form", "option");
+                            }
+                        ?>'); 
+                  
+        
                    
                 </style>
                 <div class="form-block ">
                     <div class="left">
                        
 
-                      
+
                         
 
                     </div>
                     <div class="right">
                         <div class="form-container">
-                            <?php $form = get_sub_field('form');
-                        echo do_shortcode($form);
-                        ?>
+
+                        <?php
+            $form = get_sub_field('form');
+            
+            if($form) {
+                echo apply_filters( 'the_content', $form);
+            
+            } else {
+                $global_form = get_field('global_form', 'option');
+                echo apply_filters( 'the_content', $global_form);
+
+            }
+            
+           ?>
                         </div>
 
                     

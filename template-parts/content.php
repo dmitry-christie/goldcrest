@@ -45,7 +45,7 @@ include( $stylesheet_root . '/inc/flexible-content.php' ); */
 	
 </article><!-- #post-<?php the_ID(); ?> -->
 <div class="guides-outer container posts_guides " data-aos="fade-up">
-                <h2 class="section-header txt-center sm-gold-line"> Related Artciles </h2>
+                <h2 class="section-header txt-center sm-gold-line"> <?php the_field('related_articles', 'option');?> </h2>
                 <div class="guides">
                 <?php
                         $args = array(

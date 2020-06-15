@@ -84,5 +84,24 @@ window.onscroll = function() {
     },
   })
   </script>
+
+
+<script>
+
+(function($) {
+$('#toggle').toggle( 
+    function() {
+        $('#popout').animate({ left: 0 }, 'slow', function() {
+            $('#toggle').html('<img src="<?php echo get_template_directory_uri(); ?>/img/hamburger.png">');
+        });
+    }, 
+    function() {
+        $('#popout').animate({ left: -250 }, 'slow', function() {
+            $('#toggle').html('<img src="<?php echo get_template_directory_uri(); ?>/img/hamburger.png">');
+        });
+    }
+);
+})(jQuery);
+</script>
 </body>
 </html>
