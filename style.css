@@ -1268,6 +1268,21 @@ header .button {
 	padding: 15px;
 }
 
+.blurb_type_3_container .blurb{
+	display: flex;
+	flex-direction: column;
+	width: 32% ;
+	max-width: 32%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4em 0em;
+}
+
+
+.blurb_type_3_section-decsription {
+	margin-bottom: 2em;
+}
+
 
 .steps {
 	margin-top: 2em;
@@ -1308,6 +1323,12 @@ header .button {
 
 .step .blurb-text {
 	margin-top: 0px;
+}
+
+.blurb .sm-gold-line:after, .step  .sm-gold-line:after {
+    
+    max-width: 15px !important; 
+    border: 1px solid #b5a160 !important;
 }
 
 .step .blurb-header {

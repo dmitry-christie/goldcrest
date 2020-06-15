@@ -307,20 +307,46 @@
 
             <!-- blurbs type 3 -->
               <?php elseif( get_row_layout() == 'blurbs_type_3' ): ?>
-                        <h2 class="section-header sm-gold-line space"> <?php the_sub_field('header'); ?> </h2>
+
+                <? $k_blurbs_type_3 = 0; ?>
+
+                <?php 
+                    
+                    $add_grey_padding = get_sub_field('add_grey_padding');
+                    if ($add_grey_padding): ?>
+                    <div class="grey-padding">
+
+                    
+                <?php endif; ?>
+                        <h2 class="section-header sm-gold-line space container txt-center"> <?php the_sub_field('header'); ?> </h2>
+
+                        <?php 
+                        $section_description = get_sub_field('section_description'); 
+                        if($section_description) {
+                            echo '<div class="container blurb_type_3_section-decsription txt-center">' . $section_description . '</div>';
+                        }
+                    ?>
                         <?php if( have_rows('blurb_type_3_repeater') ): ?>
-                            <div class="blurb_type_3_container blurbs">
+                            <div class="blurb_type_3_container blurbs container">
                                 <?php while ( have_rows('blurb_type_3_repeater') ) : the_row(); ?>
-                                    <div class="blurb">
+                                    <div class="blurb blurb-<?php echo $k_blurbs_type_3; ?>">
                                         <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/icons/GC-ICON-' . $icon . '.png'; ?>">
                                         <h3 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h3>
                                         <p class="blurb-text txt-center ">
                                             <?php the_sub_field('text'); ?>
                                         </p>
                                     </div>
+                                    <?php $k_blurbs_type_3++;?>
                                     <?php endwhile; ?>
                             </div>
                         <?php endif; ?>
+
+
+                <?php $add_grey_padding = get_sub_field('add_grey_padding');
+ if ($add_grey_padding): ?>
+                        
+                    </div> <!-- grey padding -->
+                <?php endif; ?>
             <!-- END blurbs type 3 -->
 
 
