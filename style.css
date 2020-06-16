@@ -2069,6 +2069,11 @@ td {
 		padding-top: 1em;
 	}
 
+	.site-branding img {
+		width: 300px;
+		max-width: 60vw;
+	}
+
 	
 	
 		.tiles > div, .form-block  > div {
