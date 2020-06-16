@@ -2453,11 +2453,12 @@ td {
 		.loop-item-container {
 			flex-direction: column;
 		}
+		.steps .step {
+			max-width: 90%;
+		}
 		
 	}
-	.steps .step {
-		max-width: 90%;
-	}
+
 
 	.steps .arrow  {
 		display: none;
