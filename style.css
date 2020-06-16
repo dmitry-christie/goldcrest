@@ -1557,7 +1557,6 @@ footer .menu .separator {
 
 .contact-us {
 	display: flex;
-	width: 100%;
 	justify-content: space-between;
 	margin-top: -4em;
 	margin-bottom: 4em;
