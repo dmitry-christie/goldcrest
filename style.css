@@ -2056,6 +2056,19 @@ td {
 		margin-bottom: 0px !important;
 	}
 
+	.contact-us {
+		flex-direction: column-reverse;
+	}
+
+	.contact-us > div {
+		width: 100%;
+	}
+
+	.contact-us .left {
+		padding: 0px;
+		padding-top: 1em;
+	}
+
 	
 	
 		.tiles > div, .form-block  > div {
