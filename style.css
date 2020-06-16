@@ -2456,13 +2456,14 @@ td {
 		.steps .step {
 			max-width: 90%;
 		}
-		
-	}
-
 
 	.steps .arrow  {
 		display: none;
 	}
+		
+	}
+
+
 
 	.steps .row-2 {
 		margin: 0px;
