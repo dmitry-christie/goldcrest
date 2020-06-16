@@ -99,7 +99,7 @@ include( $stylesheet_root . '/inc/flexible-content.php' ); */
                 </div>
 				<style>
                     .form-block .left {
-                        background-image: url('<?php the_field('global_image', 'option'); ?>'); 
+                        background-image: url('<?php the_field('global_image_form', 'option'); ?>'); 
                     }
 
                    
