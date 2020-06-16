@@ -2460,14 +2460,15 @@ td {
 	.steps .arrow  {
 		display: none;
 	}
+	.steps .row-2 {
+		margin: 0px;
+	}
 		
 	}
 
 
 
-	.steps .row-2 {
-		margin: 0px;
-	}
+	
 
 	.hidden {
 		width: 17px;
