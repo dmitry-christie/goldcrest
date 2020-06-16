@@ -2051,6 +2051,11 @@ td {
 		padding: 1em;
 	}
 
+	.space {
+		margin-top: 1em !important;
+		margin-bottom: 0px !important;
+	}
+
 	
 	
 		.tiles > div, .form-block  > div {
