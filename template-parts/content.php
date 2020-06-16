@@ -99,7 +99,7 @@ include( $stylesheet_root . '/inc/flexible-content.php' ); */
                 </div>
 				<style>
                     .form-block .left {
-                        background-image: url('<?php the_sub_field('image-form', 'options'); ?>'); 
+                        background-image: url('<?php the_field('global_image', 'option'); ?>'); 
                     }
 
                    
@@ -114,7 +114,7 @@ include( $stylesheet_root . '/inc/flexible-content.php' ); */
                     </div>
                     <div class="right">
                         <div class="form-container">
-                            <?php $form = get_sub_field('form');
+                            <?php $form = get_field('global_form', 'options');
                         echo do_shortcode($form);
                         ?>
                         </div>
