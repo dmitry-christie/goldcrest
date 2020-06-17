@@ -799,6 +799,13 @@
                     text-align: right;
                 }
 
+                @media (min-width: 1300px) {
+                    .swiper-slide .text {
+                        right: calc((100vw - 1080px) * -1);
+
+                    }
+                }
+
                 .slider_sub-header {
                     color: white;
                 }
