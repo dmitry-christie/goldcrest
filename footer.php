@@ -80,10 +80,10 @@ var menu = ['Lisbon', 'Porto', 'Braga', 'Faro', 'Coimbra', 'Evora'];
     },
 
     // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+    //navigation: {
+     // nextEl: '.swiper-button-next',
+    //  prevEl: '.swiper-button-prev',
+   // },
 
     // And if we need scrollbar
     scrollbar: {

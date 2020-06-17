@@ -643,12 +643,13 @@
                 }
 
                 .pagination-menu{
-                    right: 20% !important;
+                    right: calc((100vw - 1080px) / 2) !important;
                 }
 
                 .swiper-slide {
                     background-color: #aaa;
                     background-blend-mode: multiply;
+                    background-size: cover;
                 }
 
                
@@ -659,12 +660,23 @@
 
 
                 .pagination-map {
-                    left: 10% !important;
+                    left: calc((100vw - 1080px) / 2);
                     background-image: url('<?php echo get_template_directory_uri(); ?>/img/map.png');
                     height: 95%;
                     background-size: contain;
                     background-repeat: no-repeat;
                     max-width: 30%;
+                }
+
+                .swiper-slide .text {
+                    position: relative;
+                    right: calc((100vw - 1080px) * -3.1);
+                    max-width: 400px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: right;
                 }
 
                 .swiper-button-prev, .swiper-button-next {
@@ -729,6 +741,24 @@
                     background-size: 20px;
                     padding-left: 10px;
                 }
+
+                .slider_header {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 2em;
+                    color: white;
+                    margin-top: 0px;
+                    font-weight: 500;
+                }
+                .slider_header:after {
+                    content: ' ';
+                    
+                    display: block;
+                    text-align: right;
+                    margin-top: 7px;
+                    max-width: 25px;
+                    border: 2px solid white;
+
+                }
             
 
            
@@ -741,8 +771,8 @@
                         <!-- Slides -->
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
                             <div class="text">
-                                <h2> Discover Portugal</h2>
-                                <p>Click ib the map reveal more info</p>
+                                <h2 class="slider_header"> Discover Portugal</h2>
+                                <p class="slider_sub-header">Click ib the map reveal more info</p>
 
                                 <h3>Discover Porto </h3>
                                 <p>45% of the country’s GDP.
@@ -752,11 +782,16 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide"></div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+</div>
+<div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+</div>
+<div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+Slide 4</div>
+<div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+Slide 5</div>
+<div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+Slide 6</div>
                         
                     </div>
                     <!-- If we need pagination -->
@@ -765,8 +800,8 @@
 
 
                     <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                 <!--   <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
 
                     <!-- If we need scrollbar -->
                     <div class="swiper-scrollbar"></div>
