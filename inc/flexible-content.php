@@ -675,8 +675,68 @@
 
                 .pagination-map .Porto {
                     position: relative;
-                    left: 25%;
-                    top: 20%;
+                    left: 90px;
+                    top: 100px;
+                }
+
+                .pagination-map .swiper-pagination-bullet-active.Porto {
+                    left: 70px;
+                    top: 80px;
+                }
+
+                .pagination-map .Braga {
+                    position: relative;
+                    left: 110px;
+                    top: 30px;
+                }
+                .pagination-map .swiper-pagination-bullet-active.Braga {
+                    left: 90px;
+                    top: 10px;
+                }
+
+                .pagination-map .Lisbon {
+                    position: relative;
+                    left: 40px;
+                    top: 350px;
+                }
+                .pagination-map .swiper-pagination-bullet-active.Lisbon{
+                    left: 20px;
+                    top: 300px;
+                }
+
+
+                .pagination-map .Faro {
+                    position: relative;
+                    left: 140px;
+                    top: 550px;
+                }
+
+                .pagination-map .swiper-pagination-bullet-active.Faro {
+                    left: 120px;
+                    top: 500px;
+                }
+
+                .pagination-map .Coimbra {
+                    position: relative;
+                    left: 110px;
+                    top: 200px;
+                }
+
+                .pagination-map .swiper-pagination-bullet-active.Coimbra {
+                    left: 95px;
+                    top: 150px;
+                }
+
+
+                .pagination-map .Evora {
+                    position: relative;
+                    left: 150px;
+                    top: 330px;
+                }
+
+                .pagination-map .swiper-pagination-bullet-active.Evora {
+                    left: 130px;
+                    top: 280px;
                 }
 
                 .pagination-map span:before {
@@ -691,10 +751,41 @@
                     opacity: 1;
                    
                 }
-                .pagination-map .swiper-pagination-bullet-active.Porto {
-                    left: 20%;
-                    top: 15%;
+
+                .pagination-map .swiper-pagination-bullet-active.Braga:before {
+                    content: url(<?php echo get_template_directory_uri(); ?>/img/slider_pointer-braga.png);
+                    visibility: visible;
+                    opacity: 1;
+                   
                 }
+                .pagination-map .swiper-pagination-bullet-active.Lisbon:before {
+                    content: url(<?php echo get_template_directory_uri(); ?>/img/slider_pointer-lisbon.png);
+                    visibility: visible;
+                    opacity: 1;
+                   
+                }
+
+                .pagination-map .swiper-pagination-bullet-active.Faro:before {
+                    content: url(<?php echo get_template_directory_uri(); ?>/img/slider_pointer-faro.png);
+                    visibility: visible;
+                    opacity: 1;
+                   
+                }
+                .pagination-map .swiper-pagination-bullet-active.Coimbra:before {
+                    content: url(<?php echo get_template_directory_uri(); ?>/img/slider_pointer-coimbra.png);
+                    visibility: visible;
+                    opacity: 1;
+                   
+                }
+
+                .pagination-map .swiper-pagination-bullet-active.Evora:before {
+                    content: url(<?php echo get_template_directory_uri(); ?>/img/slider_pointer-evora.png);
+                    visibility: visible;
+                    opacity: 1;
+                   
+                }
+                
+                
                
 
                 .swiper-slide .text {
@@ -708,9 +799,22 @@
                     text-align: right;
                 }
 
+                .slider_sub-header {
+                    color: white;
+                }
+
                 .swiper-button-prev, .swiper-button-next {
                     color: white;
                 }
+
+                .slider_country-header, .slider_country-description {
+
+                    color: #e0c575; 
+                    margin-bottom: 0px;
+
+                }
+
+               
 
                 .swiper-button-prev {
                     left: none;
@@ -777,6 +881,7 @@
                     color: white;
                     margin-top: 0px;
                     font-weight: 500;
+                    margin-bottom: 0px;
                 }
                 .slider_header:after {
                     content: ' ';
@@ -820,14 +925,102 @@
                             </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                            <div class="text">
+                                <h2 class="slider_header">
+                                    Discover Portugal
+                                </h2>
+                                <p class="slider_sub-header">
+                                    Click on the map reveal more info
+                                </p>
+
+                                <h3 class="slider_country-header">
+                                    Discover Porto 
+                                </h3>
+                                <p class="slider_country-description">
+                                    45% of the country’s GDP.
+                                    Home to most multinational companies in Portugal.
+                                    Dynamic financial and technological hub.
+                                    High real estate returns.
+                                </p>
+                            </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                            <div class="text">
+                                <h2 class="slider_header">
+                                    Discover Portugal
+                                </h2>
+                                <p class="slider_sub-header">
+                                    Click on the map reveal more info
+                                </p>
+
+                                <h3 class="slider_country-header">
+                                    Discover Braga 
+                                </h3>
+                                <p class="slider_country-description">
+                                    45% of the country’s GDP.
+                                    Home to most multinational companies in Portugal.
+                                    Dynamic financial and technological hub.
+                                    High real estate returns.
+                                </p>
+                            </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                            <div class="text">
+                                <h2 class="slider_header">
+                                    Discover Portugal
+                                </h2>
+                                <p class="slider_sub-header">
+                                    Click on the map reveal more info
+                                </p>
+
+                                <h3 class="slider_country-header">
+                                    Discover Faro
+                                </h3>
+                                <p class="slider_country-description">
+                                    45% of the country’s GDP.
+                                    Home to most multinational companies in Portugal.
+                                    Dynamic financial and technological hub.
+                                    High real estate returns.
+                                </p>
+                            </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                            <div class="text">
+                                <h2 class="slider_header">
+                                    Discover Portugal
+                                </h2>
+                                <p class="slider_sub-header">
+                                    Click on the map reveal more info
+                                </p>
+
+                                <h3 class="slider_country-header">
+                                    Discover Coimbra
+                                <p class="slider_country-description">
+                                    45% of the country’s GDP.
+                                    Home to most multinational companies in Portugal.
+                                    Dynamic financial and technological hub.
+                                    High real estate returns.
+                                </p>
+                            </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                        <div class="text">
+                                <h2 class="slider_header">
+                                    Discover Portugal
+                                </h2>
+                                <p class="slider_sub-header">
+                                    Click on the map reveal more info
+                                </p>
+
+                                <h3 class="slider_country-header">
+                                    Discover Evora
+                                <p class="slider_country-description">
+                                    45% of the country’s GDP.
+                                    Home to most multinational companies in Portugal.
+                                    Dynamic financial and technological hub.
+                                    High real estate returns.
+                                </p>
+                            </div>
                         </div>
                         
                     </div>
