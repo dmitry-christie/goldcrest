@@ -1063,6 +1063,7 @@ left: -13px;
 .top-bar-outer {
 	position: fixed;
 	width: 100%;
+	z-index: 1000;
 }
 
 .top-bar-outer hr {

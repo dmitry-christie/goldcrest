@@ -668,6 +668,35 @@
                     max-width: 30%;
                 }
 
+                .pagination-map span {
+                    visibility: hidden;
+                    opacity: 1;
+                }
+
+                .pagination-map .Porto {
+                    position: relative;
+                    left: 25%;
+                    top: 20%;
+                }
+
+                .pagination-map span:before {
+                    content: url(<?php echo get_template_directory_uri(); ?>/img/map_pointer-mini.png);
+                    visibility: visible;
+                    opacity: 1;
+                }
+
+                .pagination-map .swiper-pagination-bullet-active.Porto:before {
+                    content: url(<?php echo get_template_directory_uri(); ?>/img/slider_pointer-porto.png);
+                    visibility: visible;
+                    opacity: 1;
+                   
+                }
+                .pagination-map .swiper-pagination-bullet-active.Porto {
+                    left: 20%;
+                    top: 15%;
+                }
+               
+
                 .swiper-slide .text {
                     position: relative;
                     right: calc((100vw - 1080px) * -3.1);
@@ -757,6 +786,7 @@
                     margin-top: 7px;
                     max-width: 25px;
                     border: 2px solid white;
+                    margin-left: calc(100% - 25px);
 
                 }
             
@@ -771,11 +801,18 @@
                         <!-- Slides -->
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
                             <div class="text">
-                                <h2 class="slider_header"> Discover Portugal</h2>
-                                <p class="slider_sub-header">Click ib the map reveal more info</p>
+                                <h2 class="slider_header">
+                                    Discover Portugal
+                                </h2>
+                                <p class="slider_sub-header">
+                                    Click on the map reveal more info
+                                </p>
 
-                                <h3>Discover Porto </h3>
-                                <p>45% of the country’s GDP.
+                                <h3 class="slider_country-header">
+                                    Discover Lisbon 
+                                </h3>
+                                <p class="slider_country-description">
+                                    45% of the country’s GDP.
                                     Home to most multinational companies in Portugal.
                                     Dynamic financial and technological hub.
                                     High real estate returns.
@@ -783,15 +820,15 @@
                             </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
-</div>
-<div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
-</div>
-<div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
-Slide 4</div>
-<div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
-Slide 5</div>
-<div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
-Slide 6</div>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                        </div>
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                        </div>
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                        </div>
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                        </div>
                         
                     </div>
                     <!-- If we need pagination -->
