@@ -62,6 +62,9 @@ window.onscroll = function() {
 </script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script>
+
+var menu = ['Lisbon', 'Porto', 'Braga', 'Faro', 'Coimbra', 'Evora'];
+
   var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     direction: 'vertical',
@@ -69,7 +72,11 @@ window.onscroll = function() {
 
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: '.pagination-map, .pagination-menu',
+			clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + ' ' + (menu[index]) + '">' + (menu[index]) + '</span>';
+        },
     },
 
     // Navigation arrows

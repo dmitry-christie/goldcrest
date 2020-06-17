@@ -637,30 +637,140 @@
 
             <?php elseif( get_row_layout() == 'slider' ): ?>
             <style>
-                            .swiper-container {
+                .swiper-container {
                 width: 100%;
-                height: 500px;
-            }
+                height: 650px;
+                }
+
+                .pagination-menu{
+                    right: 20% !important;
+                }
+
+                .swiper-slide {
+                    background-color: #aaa;
+                    background-blend-mode: multiply;
+                }
+
+               
+
+                .swiper-pagination {
+                    max-width: 20%;
+                }
+
+
+                .pagination-map {
+                    left: 10% !important;
+                    background-image: url('<?php echo get_template_directory_uri(); ?>/img/map.png');
+                    height: 95%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    max-width: 30%;
+                }
+
+                .swiper-button-prev, .swiper-button-next {
+                    color: white;
+                }
+
+                .swiper-button-prev {
+                    left: none;
+                    right: 10% !important;
+                    top: 20px;
+                }
+
+                .pagination-menu {
+                    color: white;
+                }
+
+                .pagination-menu {
+                    font-weight: 500;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+              
+                }
+
+                .pagination-menu .swiper-pagination-bullet {
+                    content: "";
+                    text-align: left;
+                    opacity: 1;
+                    background: 0 0;
+                    color: #fff;
+                    margin: 15px 0 !important;
+                    position: relative;
+                    color: #fff;
+                    line-height: 1.8;
+                    display: flex !important;
+                    align-items: center;
+                }
+
+                .pagination-menu .swiper-pagination-bullet-active:before {
+                    content: "";
+                    position: absolute;
+                    left: -37px;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 100%;
+                    background-color: white;
+                }
+
+                .pagination-menu:before {
+                    content: "";
+                    position: absolute;
+                    left: -30px;
+                    top: 0;
+                    height: 100%;
+                    width: 1px;
+                    background-color: rgba(255,255,255,.2);
+                }
+
+                .pagination-menu .swiper-pagination-bullet {
+                    background-size: 20px;
+                    padding-left: 10px;
+                }
+            
+
+           
+                        
             </style>
 
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                   
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                            <div class="text">
+                                <h2> Discover Portugal</h2>
+                                <p>Click ib the map reveal more info</p>
+
+                                <h3>Discover Porto </h3>
+                                <p>45% of the country’s GDP.
+                                    Home to most multinational companies in Portugal.
+                                    Dynamic financial and technological hub.
+                                    High real estate returns.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination pagination-menu"></div>
+                    <div class="swiper-pagination pagination-map"></div>
+
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>                                                   
-
 
             <!-- END Slider -->
 
