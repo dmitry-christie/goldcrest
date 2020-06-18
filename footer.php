@@ -36,7 +36,7 @@
 				</ul>
 			
 			</div>
-			<div class="social">
+			<div class="social social-desktop">
 					<?php $social_link_linked = get_field('social_links_linked', 'options'); if($social_link_linked) {  ?><a href="<?php the_field('social_links_linked', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-linked.png"></a><?php } ?>
 					<?php $social_links_facebook = get_field('social_links-facebook', 'options'); if($social_links_facebook) {  ?><a href="<?php the_field('social_links-facebook', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-fb.png"></a><?php } ?>
 					<?php $social_links_instagram_url = get_field('social_links-instagram_url', 'options'); if($social_links_instagram_url) {  ?><a href="<?php the_field('social_links-instagram_url', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-ig.png"> </a><?php } ?>
@@ -44,7 +44,12 @@
 		</div>
 		<hr class="container">
 		<div class="copyright-container container">
-			<p>Goldcrest Advisors - All rights reserved - <?php echo date("Y"); ?></p>
+      <p><span class="company_name">Goldcrest Advisors </span>- All rights reserved - <?php echo date("Y"); ?></p>
+      <div class="social social-mobile">
+					<?php $social_link_linked = get_field('social_links_linked', 'options'); if($social_link_linked) {  ?><a href="<?php the_field('social_links_linked', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-linked.png"></a><?php } ?>
+					<?php $social_links_facebook = get_field('social_links-facebook', 'options'); if($social_links_facebook) {  ?><a href="<?php the_field('social_links-facebook', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-fb.png"></a><?php } ?>
+					<?php $social_links_instagram_url = get_field('social_links-instagram_url', 'options'); if($social_links_instagram_url) {  ?><a href="<?php the_field('social_links-instagram_url', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/img/footer-ig.png"> </a><?php } ?>
+			</div>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
@@ -79,11 +84,11 @@ var menu = ['Lisbon', 'Porto', 'Braga', 'Faro', 'Coimbra', 'Evora'];
         },
     },
 
-    // Navigation arrows
-    //navigation: {
-     // nextEl: '.swiper-button-next',
-    //  prevEl: '.swiper-button-prev',
-   // },
+    
+    navigation: {
+      nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+    },
 
     // And if we need scrollbar
     scrollbar: {

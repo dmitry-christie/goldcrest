@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
 Description: Description
-Version: 1.0.0
+Version: 1.0.1
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -1701,6 +1701,15 @@ input[type='radio']:checked:after {
 	color: white;
 }
 
+.social-mobile {
+	display: none;
+}
+
+.company_name {
+	font-weight: bolder;
+}
+
+
 
 
 @media (min-width: 1080px) {
@@ -1957,7 +1966,7 @@ td {
 	float: right;
 	position: fixed;
 	top: 30px;
-	right: 45px;
+	right: 25px;
 	width: 28px;
 	height: 0px;
 	 
@@ -1987,6 +1996,10 @@ td {
 		max-width: 50%;
 	}
 
+	} 
+
+	.swiper-button-next, .swiper-button-prev {
+		display: none;
 	} 
 
 
@@ -2088,12 +2101,12 @@ td {
 
 		.site-footer .menu ul {
 			display: flex;
-			flex-direction: column;
+			flex-direction: row;
+			flex-wrap: wrap;
+
 		}
 
-		.site-footer .separator {
-			display:none;
-		}
+		
 	
 
 		.hero .ac-form {
@@ -2458,12 +2471,97 @@ td {
 			max-width: 90%;
 		}
 
-	.steps .arrow  {
-		display: none;
-	}
-	.steps .row-2 {
-		margin: 0px;
-	}
+		.steps .arrow  {
+			display: none;
+		}
+		.steps .row-2 {
+			margin: 0px;
+		}
+
+		.top-bar-outer {
+			border-bottom: 1px solid white;
+		}
+
+		.header-cta-container {
+			padding: 0px 25px;
+		}
+
+		.header-cta-section h1 {
+			font-weight: 600;
+		}
+
+		.header-cta-section p {
+			font-weight: 500;
+		}
+
+		.text-container {
+			text-align: left !important;
+		}
+
+		.text_image>div:last-child {
+			padding-left: 0px;
+		}
+
+		.grey-padding {
+			background: white;
+		}
+
+		.tiles .left-container {
+			padding-right: 0px;
+		}
+
+		.social-desktop {
+			display: none;
+		}
+
+		.copyright-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.copyright-container p {
+			font-size: 0.8em;
+		}
+
+		.social-mobile {
+			display: block;
+			padding-bottom: 0px;
+			padding-left: 1em;
+		}
+
+		.site-footer .menu ul {
+			justify-content: center;
+		}
+
+		.swiper-container {
+			max-height: 70vh !important;
+		}
+
+		.map-section {
+			display: none;
+		}
+
+		.swiper-slide .text {
+			position: static !important; 
+			max-width: 400px;
+			max-width: 90% !important;
+			height: 100%;
+			
+		}
+
+		.slider_sub-header {
+			display: none;
+		}
+
+		.slider_country-description {
+			font-size: 17px;
+		}
+		
+		
+
+
+
 		
 	}
 
@@ -2515,6 +2613,9 @@ td {
 	@media (max-width: 400px) {
 		.main-menu-outer-container .container {
 			max-width: 100%;
+		}
+
+		.buttons-container {
 		}
 	}
 

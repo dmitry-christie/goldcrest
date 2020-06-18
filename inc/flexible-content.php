@@ -901,6 +901,24 @@
                     margin-left: calc(100% - 25px);
 
                 }
+
+
+                @media (max-width: 800px ) {
+                    .swiper-button-prev {
+                        right: 80% !important;
+                        top: 30px;
+                        left: 80%;
+                        transform: rotate(90deg);
+                    }
+
+                    .swiper-button-next {
+                        right: 80% !important;
+                        top: 90%;
+                        left: 80%;
+                        transform: rotate(90deg);
+                    }
+                }
+
             
 
            
@@ -1036,9 +1054,8 @@
                     <div class="swiper-pagination pagination-map"></div>
 
 
-                    <!-- If we need navigation buttons -->
-                 <!--   <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div> -->
+                   <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> 
 
                     <!-- If we need scrollbar -->
                     <div class="swiper-scrollbar"></div>
