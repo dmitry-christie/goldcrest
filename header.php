@@ -28,7 +28,7 @@
             background-image: url('<?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); echo $featured_img_url;?>');           
 			background-color: #aaa;
 			background-blend-mode: multiply;
-			height: 90vh;
+			height: 60vh;
 			background-size: cover;
 }
 <?php if(is_archive() or !is_front_page() ) { ?>

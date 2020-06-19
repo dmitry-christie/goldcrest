@@ -929,7 +929,7 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider/slide-lisbon.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
                                     Discover Portugal
@@ -949,7 +949,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider/slide-porto.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
                                     Discover Portugal
@@ -969,7 +969,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider/slide-braga.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
                                     Discover Portugal
@@ -989,7 +989,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider/slide-faro.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
                                     Discover Portugal
@@ -1009,7 +1009,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider/slide-coimbra.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
                                     Discover Portugal
@@ -1028,7 +1028,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider-porto-bg.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/sliderr/slide-evora.jpg');">
                         <div class="text">
                                 <h2 class="slider_header">
                                     Discover Portugal

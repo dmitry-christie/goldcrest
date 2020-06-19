@@ -1714,6 +1714,10 @@ input[type='radio']:checked:after {
 	display: none !important;
 }
 
+.image-block-mobile {
+	display: none;
+}
+
 
 
 @media (min-width: 1080px) {
@@ -2047,6 +2051,14 @@ td {
 
 		.ancillary div {
 			width: 90%;
+		}
+
+		.image-block-mobile  {
+			display: inline;
+		}
+
+		.image-block-desktop {
+			display: none;
 		}
 	}
 
