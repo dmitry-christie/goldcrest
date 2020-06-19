@@ -647,7 +647,7 @@
                 }
 
                 .swiper-slide {
-                    background-color: #aaa;
+                    background-color:  #3D3D3D;
                     background-blend-mode: multiply;
                     background-size: cover;
                 }
