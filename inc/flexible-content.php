@@ -1028,7 +1028,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/sliderr/slide-evora.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider/slide-evora.jpg');">
                         <div class="text">
                                 <h2 class="slider_header">
                                     Discover Portugal
