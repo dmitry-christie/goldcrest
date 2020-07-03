@@ -20,7 +20,7 @@
                     <div class="container visual-editor">
 
                    
-                    <?php $header = get_field('header');
+                    <?php $header = get_sub_field('header');
                     if ($header) {
                     ?>
                     <h2 class="section-header sm-gold-line"> <?php the_sub_field('header'); }?> </h2>
