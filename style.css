@@ -1206,9 +1206,18 @@ margin: 0 auto;
 }
 .buttons-container {
 	display: flex;
-	justify-content: space-between;
-	text-decoration: none;
-	margin-top: 3em;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 3em;
+    align-items: center;
+}
+
+.buttons-container .button_gold {
+	margin-right: 1em;
+}
+
+.buttons-container .button_white {
+	margin-left: 1em;
 }
 
 .buttons-container a {

@@ -71,7 +71,7 @@
 					?>
 				</nav><!-- #site-navigation -->
 				<div id="toggle">
-					<img alt="Residency and citizenship by investment" src="<?php echo get_template_directory_uri(); ?>/img/hamburger.png"></div>
+					<img alt="Residency and citizenship by investment" src="<?php echo get_template_directory_uri(); ?>/images/hamburger.png"></div>
 					<div id="popout">
 						<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_class' => 'nav-menu-mobile' ) ); ?>
 					</div>

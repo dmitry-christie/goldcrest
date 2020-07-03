@@ -82,7 +82,7 @@
                 if($enable_button) {
                     ?>
                     <a href="<?php $button_url = get_sub_field('button_url'); echo $button_url; ?>">
-                        <div class="button"><?php $button_text = get_sub_field('button_text'); echo $button_text; ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                        <div class="button button_gold"><?php $button_text = get_sub_field('button_text'); echo $button_text; ?> </div>
                     </a>
 
                     <?php
@@ -139,7 +139,7 @@
                        if($enable_button) {
                            ?>
                            <a href="<?php $button_url = get_sub_field('button_url'); echo $button_url; ?>">
-                               <div class="button"><?php $button_text = get_sub_field('button_text'); echo $button_text; ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                               <div class="button"><?php $button_text = get_sub_field('button_text'); echo $button_text; ?> <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-button.png"></div>
                            </a>
        
                            <?php
@@ -196,7 +196,7 @@
                        if($enable_button) {
                            ?>
                            <a href="<?php $button_url = get_sub_field('button_url'); echo $button_url; ?>">
-                               <div class="button"><?php $button_text = get_sub_field('button_text'); echo $button_text; ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                               <div class="button"><?php $button_text = get_sub_field('button_text'); echo $button_text; ?> <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-button.png"></div>
                            </a>
        
                            <?php
@@ -246,7 +246,7 @@
                                 <?php while ( have_rows('blurb_type_1_repeater') ) : the_row(); ?>
 
                                     <div class="blurb txt-center">
-                                        <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/icons/GC-ICON-' . $icon . '.png'; ?>">
+                                        <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/images/icons/GC-ICON-' . $icon . '.png'; ?>">
                                         <?php $header = get_sub_field('header'); if($header) { ?><h3 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h3> <?php } ?>
                                         <span> <?php the_sub_field('text'); ?></span>
                                     </div>
@@ -285,7 +285,7 @@
                                 <?php while ( have_rows('blurb_type_2_repeater') ) : the_row(); ?>
 
                                     <div class="blurb txt-center blurb-<?php echo $k; ?> in-row-<?php if($k < 4) { echo '1';} elseif ($k <8){  echo '2';} elseif( $k < 12) { echo '3';}?>">
-                                        <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/icons/GC-ICON-' . $icon . '.png'; ?>">
+                                        <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/images/icons/GC-ICON-' . $icon . '.png'; ?>">
                                         <?php $header = get_sub_field('header'); if($header) { ?><h3 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h3> <?php } ?>
                                         <span> <?php the_sub_field('text'); ?></span>
                                     </div>
@@ -330,7 +330,7 @@
                             <div class="blurb_type_3_container blurbs container">
                                 <?php while ( have_rows('blurb_type_3_repeater') ) : the_row(); ?>
                                     <div class="blurb blurb-<?php echo $k_blurbs_type_3; ?>">
-                                        <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/icons/GC-ICON-' . $icon . '.png'; ?>">
+                                        <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/images/icons/GC-ICON-' . $icon . '.png'; ?>">
                                         <h3 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h3>
                                         <p class="blurb-text txt-center ">
                                             <?php the_sub_field('text'); ?>
@@ -371,10 +371,10 @@
                                  $k_step_by_step) { echo '2';} else { echo '1';}?>">
                              
 
-<div class="arrow arrow-<?php echo $k_step_by_step; ?>"><img src="<?php echo get_template_directory_uri() . "/img/arrow-step-by-step.png"; ?>"></div>
+<div class="arrow arrow-<?php echo $k_step_by_step; ?>"><img src="<?php echo get_template_directory_uri() . "/images/arrow-step-by-step.png"; ?>"></div>
                                     <div class="number"><?php echo $k_step_by_step; ?></div>
                                     <div class="step-content">
-                                        <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/icons/GC-ICON-' . $icon . '.png'; ?>">
+                                        <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/images/icons/GC-ICON-' . $icon . '.png'; ?>">
                                         <h3 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h3>
                                         <p class="blurb-text txt-center ">
                                             <?php the_sub_field('text'); ?>
@@ -418,7 +418,7 @@
                                 <?php while ( have_rows('usp') ) : the_row(); ?>
 
                                     <div class="usp">
-                                        <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/icons/GC-ICON-' . $icon . '.png'; ?>">
+                                        <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/images/icons/GC-ICON-' . $icon . '.png'; ?>">
                                         <?php $header = get_sub_field('header'); if($header) { ?><h5 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h5> <?php } ?>
                                         <span class="txt-center"> <?php the_sub_field('text'); ?></span>
                                     </div>
@@ -496,7 +496,7 @@
                             } else { 
                                 echo 'Read more '; 
                             } 
-                        ?> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                        ?> <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-button.png"></div>
 
                                         </div>
                                     </a>
@@ -564,7 +564,7 @@
                             } else { 
                                 echo 'Read more '; 
                             } 
-                            ?><img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                            ?><img src="<?php echo get_template_directory_uri(); ?>/images/arrow-button.png"></div>
                                         </a>
 
                                     </div>
@@ -608,14 +608,14 @@
                                     <div class="flip-card">
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
-                                            <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/icons/GC-ICON-' . $icon . '.png'; ?>">
+                                            <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/images/icons/GC-ICON-' . $icon . '.png'; ?>">
                                             <?php $header = get_sub_field('header'); if($header) { ?><h5 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h5> <?php } ?>
                                             <img class="more" src="<?php 
                                                                         $more_button_flip_cards = get_field('more_button_flip_cards', 'option'); 
                                                                         if ($more_button_flip_cards) {
                                                                             echo $more_button_flip_cards; 
                                                                         } else { 
-                                                                            echo get_template_directory_uri() . '/img/more.png'; 
+                                                                            echo get_template_directory_uri() . '/images/more.png'; 
                                                                         } 
                                                                     ?>" alt="">
                                             </div>
@@ -647,7 +647,7 @@
                 }
 
                 .swiper-slide {
-                    background-color:  #3D3D3D;
+                    background-color:  #3d3d3d;
                     background-blend-mode: multiply;
                     background-size: cover;
                 }
@@ -661,7 +661,7 @@
 
                 .pagination-map {
                     left: calc((100vw - 1080px) / 2);
-                    background-image: url('<?php echo get_template_directory_uri(); ?>/img/map.png');
+                    background-image: url('<?php echo get_template_directory_uri(); ?>/images/map.png');
                     height: 95%;
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -740,46 +740,46 @@
                 }
 
                 .pagination-map span:before {
-                    content: url(<?php echo get_template_directory_uri(); ?>/img/map_pointer-mini.png);
+                    content: url(<?php echo get_template_directory_uri(); ?>/images/map_pointer-mini.png);
                     visibility: visible;
                     opacity: 1;
                 }
 
                 .pagination-map .swiper-pagination-bullet-active.Porto:before {
-                    content: url(<?php echo get_template_directory_uri(); ?>/img/slider_pointer-porto.png);
+                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-porto.png);
                     visibility: visible;
                     opacity: 1;
                    
                 }
 
                 .pagination-map .swiper-pagination-bullet-active.Braga:before {
-                    content: url(<?php echo get_template_directory_uri(); ?>/img/slider_pointer-braga.png);
+                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-braga.png);
                     visibility: visible;
                     opacity: 1;
                    
                 }
                 .pagination-map .swiper-pagination-bullet-active.Lisbon:before {
-                    content: url(<?php echo get_template_directory_uri(); ?>/img/slider_pointer-lisbon.png);
+                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-lisbon.png);
                     visibility: visible;
                     opacity: 1;
                    
                 }
 
                 .pagination-map .swiper-pagination-bullet-active.Faro:before {
-                    content: url(<?php echo get_template_directory_uri(); ?>/img/slider_pointer-faro.png);
+                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-faro.png);
                     visibility: visible;
                     opacity: 1;
                    
                 }
                 .pagination-map .swiper-pagination-bullet-active.Coimbra:before {
-                    content: url(<?php echo get_template_directory_uri(); ?>/img/slider_pointer-coimbra.png);
+                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-coimbra.png);
                     visibility: visible;
                     opacity: 1;
                    
                 }
 
                 .pagination-map .swiper-pagination-bullet-active.Evora:before {
-                    content: url(<?php echo get_template_directory_uri(); ?>/img/slider_pointer-evora.png);
+                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-evora.png);
                     visibility: visible;
                     opacity: 1;
                    
@@ -929,7 +929,7 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider/slide-lisbon.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-lisbon.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
                                     Discover Portugal
@@ -949,7 +949,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider/slide-porto.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-porto.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
                                     Discover Portugal
@@ -969,7 +969,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider/slide-braga.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-braga.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
                                     Discover Portugal
@@ -989,7 +989,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider/slide-faro.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-faro.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
                                     Discover Portugal
@@ -1009,7 +1009,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider/slide-coimbra.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-coimbra.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
                                     Discover Portugal
@@ -1028,7 +1028,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/slider/slide-evora.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-evora.jpg');">
                         <div class="text">
                                 <h2 class="slider_header">
                                     Discover Portugal
