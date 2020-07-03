@@ -50,6 +50,8 @@ include( $stylesheet_root . '/inc/flexible-content.php' ); */
                 <?php
                         $args = array(
                             'post_type' => 'post',
+                            'post__not_in' => array (get_the_ID()),
+
 							'posts_per_page' => 3,
 							'category__in' => wp_get_post_categories($post->ID),
                         );
