@@ -76,7 +76,7 @@ include( $stylesheet_root . '/inc/flexible-content.php' ); */
                             } else { 
                                 echo 'Read more '; 
                             } 
-                            ?><img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+                            ?><img src="<?php echo get_template_directory_uri(); ?>/images/arrow-button.png"></div>
                                         </a>
 
                                     </div>
