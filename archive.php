@@ -57,7 +57,7 @@ get_header();
 						</div><!-- .entry-content -->
 
 						<a href="<?php the_permalink(); ?>">
-						<div class="read-more"> Read More <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png"></div>
+						<div class="read-more"> Read More <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-button.png"></div>
 
                                         
 						</a>
@@ -90,7 +90,7 @@ get_header();
 
 	<style>
                     .form-block .left {
-    				background-image: url(//localhost:3000/wp-content/uploads/2020/06/contact-form-image.png);
+    				background-image: url('https://portugalbuyersagent.com/wp-content/uploads/2020/06/home-contact-image.jpg');
 			}
 
                    
