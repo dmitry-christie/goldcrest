@@ -1633,6 +1633,8 @@ button.swiper-pagination-bullet {
 
               <?php elseif( get_row_layout() == 'contact_form' ): ?>
                 <style>
+
+                
                     .form-block .left {
                         background-image: url('<?php
                             $image_left = get_sub_field("image-left");
@@ -1644,7 +1646,11 @@ button.swiper-pagination-bullet {
                         ?>'); 
                   
         
-                   
+                   @media (max-width: 700px) {
+                    .form-block .left {
+                            background-position: center;
+                        }
+                   }
                 </style>
                 <div class="form-block ">
                     <div class="left">

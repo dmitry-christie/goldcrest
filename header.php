@@ -28,6 +28,7 @@
 			background-color: #aaa;
 			background-blend-mode: multiply;
 			height: 60vh;
+			min-height: 550px;
 			background-size: cover;
 }
 <?php if(is_archive() or !is_front_page() ) { ?>
