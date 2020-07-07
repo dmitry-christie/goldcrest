@@ -20,7 +20,6 @@
 
 	<?php wp_head(); ?>
 
-	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
 </head>
 <style>

@@ -65,7 +65,7 @@ window.onscroll = function() {
     }
 }
 </script>
-<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/swiper.js"></script>
 <script>
 
 var menu = ['Lisbon', 'Porto', 'Braga', 'Faro', 'Coimbra', 'Evora'];
