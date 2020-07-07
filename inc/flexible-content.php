@@ -1644,7 +1644,7 @@ button.swiper-pagination-bullet {
                                 the_sub_field("global_image_form", "option");
                             }
                         ?>'); 
-                  
+                    }
         
                    @media (max-width: 700px) {
                     .form-block .left {
