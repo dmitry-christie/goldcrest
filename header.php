@@ -28,8 +28,18 @@
 			background-color: #aaa;
 			background-blend-mode: multiply;
 			height: 60vh;
-			min-height: 550px;
+			min-height: 650px;
 			background-size: cover;
+}
+
+@media (max-width: 700px) {
+	.buttons-container .button_gold{
+		margin: 0px 0px 1em 0px;
+	}
+
+	.buttons-container .button_white {
+		margin-left: 0px;
+	}
 }
 <?php if(is_archive() or !is_front_page() ) { ?>
 
