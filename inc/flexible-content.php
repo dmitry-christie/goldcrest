@@ -530,6 +530,14 @@
 
              <!-- Local Experts Guide -->
              <?php elseif( get_row_layout() == 'local_experts_guides' ): ?>
+                <?php 
+                    
+                    $add_grey_padding = get_sub_field('add_grey_padding');
+                    if ($add_grey_padding): ?>
+                    <div  class="grey-padding ">
+
+                    
+                <?php endif; ?>
              <div class="guides-outer container " data-aos="fade-up">
                 <?php if(get_sub_field('section_header')) { ?><h2 class="section-header txt-center sm-gold-line"> <?php the_sub_field('section_header'); ?> </h2><?php } ?>
                 <?php if(get_sub_field('description')) { ?><p class="description txt-center"> <?php the_sub_field('description'); ?> </p><?php } ?>
@@ -585,6 +593,11 @@
                 </div>
 
                 </div>
+                <?php                    $add_grey_padding = get_sub_field('add_grey_padding');
+ if ($add_grey_padding): ?>
+                        
+                    </div> <!-- grey padding -->
+                <?php endif; ?>
             <!-- END Local Experts Guide -->
 
 
