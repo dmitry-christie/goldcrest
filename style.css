@@ -1182,6 +1182,10 @@ margin: 0 auto;
 
 }
 
+.post .entry-content ul {
+	padding-left: 1em;
+}
+
 .post-meta {
 	color: white;
 	text-transform: uppercase;
@@ -2595,6 +2599,12 @@ td {
 
 
 		
+	}
+
+	@media (max-width: 500px) {
+		.post .entry-content {
+			padding: 1em;
+		}
 	}
 
 
