@@ -1714,6 +1714,105 @@ button.swiper-pagination-bullet {
 
             <!-- END contact form -->
 
+
+
+
+            <?php elseif( get_row_layout() == 'related_posts' ): ?>
+                          <!-- Related Posts -->
+
+             <div class="guides-outer " data-aos="fade-up">
+
+                <?php if(get_sub_field('section_header')) { ?><h2 class="section-header txt-center sm-red-line"> <?php the_sub_field('section_header'); ?> </h2><?php } ?>
+
+
+                <div class="guides">
+                <?php $i = 0; ?>
+
+                <?php
+                        $args = array(
+                            'post__not_in' => array (get_the_ID()),
+                            'post_type' => 'post',
+                            'posts_per_page' => 4,
+                            'category_name' => 'guides',
+
+                        );
+
+                        if(get_sub_field('guides_category')) {
+                                  $args['category_name'] = get_sub_field('guides_category');
+                                  
+                        }
+
+                        if(get_sub_field('posts_per_page')) {
+                            $posts_per_page = get_sub_field('posts_per_page');
+                            $args['posts_per_page'] = $posts_per_page++;
+                        }
+
+                       
+                      
+
+                       
+
+                        $post_query = new WP_Query($args);
+
+                        if($post_query->have_posts() ) {
+                            while($post_query->have_posts() ) {
+                                $post_query->the_post();
+                                if ( $posts_per_page > $i or !$posts_per_page) {
+                                ?>
+
+                                <div class="<?php echo 'guide-' . $i; ?>" style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>')">
+                                    <div class="guide colour">
+
+                                        <h5><?php the_title(); ?></h5>
+                                        <a href="<?php the_permalink(); ?>">
+                                            <div class="button"><?php $read_more_global_button_text = get_field('read_more_global_button_text', 'option'); 
+                            if ($read_more_global_button_text) {
+                                echo $read_more_global_button_text; 
+                            } else { 
+                                echo 'Read more '; 
+                            } 
+
+                            $i++;
+                            ?><img src="<?php echo get_template_directory_uri(); ?>/img/arrow-button.png" alt="arrow icon"></div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+
+                              
+                                <?php
+                                }
+                                }
+                            }
+                            wp_reset_query();
+
+                            if($custom_per_row) {
+
+                            } else {
+                                if ($i > 4 and 8 > $i)
+                                ?>
+                                <style>
+                                    .guide-4, .guide-5, .guide-6, .guide-7, .guide-8, .guide-9, .guide-10 {
+                                    margin: 1em auto 0px auto;
+                                    }
+                                </style>    
+    
+                                <?php
+                            }
+    
+                    ?>
+
+
+
+                  
+                   
+                </div>
+
+                </div>
+                <?php $k++; ?>
+            <!-- END Local Experts Guide -->
+
              
 
 

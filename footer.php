@@ -37,18 +37,18 @@
 			
 			</div>
 			<div class="social social-desktop">
-					<?php $social_link_linked = get_field('social_links_linked', 'options'); if($social_link_linked) {  ?><a href="<?php the_field('social_links_linked', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-linked.png"></a><?php } ?>
-					<?php $social_links_facebook = get_field('social_links-facebook', 'options'); if($social_links_facebook) {  ?><a href="<?php the_field('social_links-facebook', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-fb.png"></a><?php } ?>
-					<?php $social_links_instagram_url = get_field('social_links-instagram_url', 'options'); if($social_links_instagram_url) {  ?><a href="<?php the_field('social_links-instagram_url', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-ig.png"> </a><?php } ?>
+					<?php $social_link_linked = get_field('social_links_linked', 'options'); if(!empty($social_link_linked)) {  ?><a href="<?php the_field('social_links_linked', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-linked.png"></a><?php } ?>
+					<?php $social_links_facebook = get_field('social_links-facebook', 'options'); if(!empty($social_links_facebook)) {  ?><a href="<?php the_field('social_links-facebook', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-fb.png"></a><?php } ?>
+					<?php $social_links_instagram_url = get_field('social_links-instagram_url', 'options'); if(!empty($social_links_instagram_url)) {  ?><a href="<?php the_field('social_links-instagram_url', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-ig.png"> </a><?php } ?>
 			</div>
 		</div>
 		<hr class="container">
 		<div class="copyright-container container">
       <p><span class="company_name">Goldcrest Advisors </span>- All rights reserved - <?php echo date("Y"); ?></p>
       <div class="social social-mobile">
-					<?php $social_link_linked = get_field('social_links_linked', 'options'); if($social_link_linked) {  ?><a href="<?php the_field('social_links_linked', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-linked.png"></a><?php } ?>
-					<?php $social_links_facebook = get_field('social_links-facebook', 'options'); if($social_links_facebook) {  ?><a href="<?php the_field('social_links-facebook', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-fb.png"></a><?php } ?>
-					<?php $social_links_instagram_url = get_field('social_links-instagram_url', 'options'); if($social_links_instagram_url) {  ?><a href="<?php the_field('social_links-instagram_url', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-ig.png"> </a><?php } ?>
+					<?php $social_link_linked = get_field('social_links_linked', 'options'); if(!empty($social_link_linked)) {  ?><a href="<?php the_field('social_links_linked', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-linked.png"></a><?php } ?>
+					<?php $social_links_facebook = get_field('social_links-facebook', 'options'); if(!empty($social_links_facebook)) {  ?><a href="<?php the_field('social_links-facebook', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-fb.png"></a><?php } ?>
+					<?php $social_links_instagram_url = get_field('social_links-instagram_url', 'options'); if(!empty($social_links_instagram_url)) {  ?><a href="<?php the_field('social_links-instagram_url', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-ig.png"> </a><?php } ?>
 			</div>
 		</div>
 	</footer><!-- #colophon -->

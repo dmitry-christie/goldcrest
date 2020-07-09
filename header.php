@@ -46,8 +46,12 @@
 			background-color: #aaa;
 			background-blend-mode: multiply;
 			height: 60vh;
-			min-height: 650px;
+			
 			background-size: cover;
+}
+
+.home #masthead {
+	min-height: 650px;
 }
 
 @media (max-width: 700px) {
