@@ -1186,6 +1186,8 @@ margin: 0 auto;
 	padding-left: 1em;
 }
 
+
+
 .post-meta {
 	color: white;
 	text-transform: uppercase;
@@ -2665,6 +2667,17 @@ td {
 		.site-footer .social {
 			min-width: 100px;
 		}
+
+		.text-container ul {
+			padding-left: 1em;
+		}
+
+		.blurb_type_3_container .blurb, .blurbs-type-2 .blurb {
+			max-width: 45%;
+			width: 45%;
+		}
+
+		
 	}
 
 
