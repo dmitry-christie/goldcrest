@@ -1055,9 +1055,18 @@ left: -13px;
 	padding: 0em 3em;
 }
 
+@media (max-width: 600px) {
+	.posts_guides {
+		padding: 0px;
+	}
+}
+
+
+
 .posts_guides  .guides > div {
 	width: 300px;
 	height: 300px;
+	flex: 0 1 300px;
 }
 
 .top-bar-outer {
@@ -1479,6 +1488,16 @@ footer .menu .separator {
     height: 300px;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media (max-width: 1080px) {
+	.guides {
+		justify-content: center;
+	}
+
+	.guides > div {
+		margin: 10px;
+	}
 }
 
 .guides > div {
