@@ -552,6 +552,13 @@
                                   $args['category_name'] = get_sub_field('guides_category');
                         }
 
+                        if(get_sub_field('number_of_posts')) { 
+                            $number_of_posts = get_sub_field('number_of_posts');
+                            $args['posts_per_page'] = $number_of_posts;
+                        } else {
+                           $args['posts_per_page'] =  6;
+                        }
+
                        
 
                         $post_query = new WP_Query($args);
@@ -628,7 +635,7 @@
                                                                         if ($more_button_flip_cards) {
                                                                             echo $more_button_flip_cards; 
                                                                         } else { 
-                                                                            echo get_template_directory_uri() . '/images/more.png'; 
+                                                                            echo get_template_directory_uri() . '/img/more.png'; 
                                                                         } 
                                                                     ?>" alt="">
                                             </div>
