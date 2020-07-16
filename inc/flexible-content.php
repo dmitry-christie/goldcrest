@@ -1292,7 +1292,7 @@ button.swiper-pagination-bullet {
 
                 .swiper-slide .text {
                     position: relative;
-                    right:     right: calc((100vw - 1080px) / -2 - 500px);;
+                    right:  calc((100vw - 1080px) / -2 - 500px);
                     max-width: 400px;
                     height: 100%;
                     display: flex;
