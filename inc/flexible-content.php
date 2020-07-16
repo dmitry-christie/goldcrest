@@ -530,6 +530,10 @@
 
              <!-- Local Experts Guide -->
              <?php elseif( get_row_layout() == 'local_experts_guides' ): ?>
+
+
+             
+
                 <?php 
                     
                     $add_grey_padding = get_sub_field('add_grey_padding');
@@ -538,7 +542,7 @@
 
                     
                 <?php endif; ?>
-             <div class="guides-outer container " data-aos="fade-up">
+             <div class="guides-outer container space" data-aos="fade-up">
                 <?php if(get_sub_field('section_header')) { ?><h2 class="section-header txt-center sm-gold-line"> <?php the_sub_field('section_header'); ?> </h2><?php } ?>
                 <?php if(get_sub_field('description')) { ?><p class="description txt-center"> <?php the_sub_field('description'); ?> </p><?php } ?>
                 <div class="guides">
@@ -562,14 +566,19 @@
                        
 
                         $post_query = new WP_Query($args);
+                        
+                        $k = 0;
+                  
 
                         if($post_query->have_posts() ) {
                             while($post_query->have_posts() ) {
                                 $post_query->the_post();
+
+                                $k++;
                                 ?>
 
                                 <div style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>')">
-                                    <div class="guide colour">
+                                    <div class="guide colour item-<?php echo $k; $posts_per_row = get_sub_field('posts_per_row'); if($k > $posts_per_row) { echo ' margin-top'; }?>">
 
                                         <h5><?php the_title(); ?></h5>
                                         <a href="<?php the_permalink(); ?>">
@@ -588,6 +597,8 @@
 
                               
                                 <?php
+
+                               
                                 }
                             }
                             wp_reset_query();
