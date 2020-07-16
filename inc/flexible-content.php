@@ -635,7 +635,7 @@
                                                                         if ($more_button_flip_cards) {
                                                                             echo $more_button_flip_cards; 
                                                                         } else { 
-                                                                            echo get_template_directory_uri() . '/img/more.png'; 
+                                                                            echo get_template_directory_uri() . '/images/more.png'; 
                                                                         } 
                                                                     ?>" alt="">
                                             </div>
