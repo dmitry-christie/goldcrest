@@ -1320,7 +1320,7 @@ button.swiper-pagination-bullet {
                 }
 
                 .slider_sub-header {
-                    color: white;
+                    color: white !important;
                 }
 
                 .swiper-button-prev, .swiper-button-next {
@@ -1445,119 +1445,99 @@ button.swiper-pagination-bullet {
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-lisbon.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
-                                    Discover Portugal
+                                    <?php the_sub_field('discover_portugal');?>
                                 </h2>
                                 <p class="slider_sub-header">
-                                    Click on the map reveal more info
+                                    <?php the_sub_field('click_on_the_map');?>
                                 </p>
 
                                 <h3 class="slider_country-header">
-                                    Discover Lisbon 
+                                    <!-- Discover Lisbon --> <?php the_sub_field('lisbon-header'); ?>
                                 </h3>
-                                <p class="slider_country-description">
-                                    45% of the country’s GDP.
-                                    Home to most multinational companies in Portugal.
-                                    Dynamic financial and technological hub.
-                                    High real estate returns.
-                                </p>
+                                    
+                                    <?php the_sub_field('lisbon-text'); ?>
+                                
                             </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-porto.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
-                                    Discover Portugal
+                                    <?php the_sub_field('discover_portugal');?>
                                 </h2>
                                 <p class="slider_sub-header">
-                                    Click on the map reveal more info
+                                    <?php the_sub_field('click_on_the_map');?>
                                 </p>
 
                                 <h3 class="slider_country-header">
-                                    Discover Porto 
+                                    <?php the_sub_field('porto-header'); ?>
                                 </h3>
-                                <p class="slider_country-description">
-                                    45% of the country’s GDP.
-                                    Home to most multinational companies in Portugal.
-                                    Dynamic financial and technological hub.
-                                    High real estate returns.
-                                </p>
+                                
+                                 
+                                    <?php the_sub_field('porto-text'); ?>
+                                
                             </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-braga.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
-                                    Discover Portugal
+                                    <?php the_sub_field('discover_portugal');?>
                                 </h2>
                                 <p class="slider_sub-header">
-                                    Click on the map reveal more info
+                                    <?php the_sub_field('click_on_the_map');?>
                                 </p>
 
                                 <h3 class="slider_country-header">
-                                    Discover Braga 
+                                    <?php the_sub_field('braga-header'); ?>
                                 </h3>
                                 <p class="slider_country-description">
-                                    45% of the country’s GDP.
-                                    Home to most multinational companies in Portugal.
-                                    Dynamic financial and technological hub.
-                                    High real estate returns.
+                                    <?php the_sub_field('braga-text'); ?>
                                 </p>
                             </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-faro.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
-                                    Discover Portugal
+                                    <?php the_sub_field('discover_portugal');?>
                                 </h2>
                                 <p class="slider_sub-header">
-                                    Click on the map reveal more info
+                                    <?php the_sub_field('click_on_the_map');?>
                                 </p>
 
                                 <h3 class="slider_country-header">
-                                    Discover Faro
+                                    <?php the_sub_field('faro-header'); ?>
                                 </h3>
-                                <p class="slider_country-description">
-                                    45% of the country’s GDP.
-                                    Home to most multinational companies in Portugal.
-                                    Dynamic financial and technological hub.
-                                    High real estate returns.
-                                </p>
+                                    <?php the_sub_field('faro-text'); ?>
                             </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-coimbra.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
-                                    Discover Portugal
+                                    <?php the_sub_field('discover_portugal');?>
                                 </h2>
                                 <p class="slider_sub-header">
-                                    Click on the map reveal more info
+                                    <?php the_sub_field('click_on_the_map');?>
                                 </p>
 
                                 <h3 class="slider_country-header">
-                                    Discover Coimbra
-                                <p class="slider_country-description">
-                                    45% of the country’s GDP.
-                                    Home to most multinational companies in Portugal.
-                                    Dynamic financial and technological hub.
-                                    High real estate returns.
-                                </p>
+                                    <?php the_sub_field('coimbra-header'); ?>
+                                </h3>
+                                    <?php the_sub_field('coimbra-text'); ?>
+
                             </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-evora.jpg');">
                         <div class="text">
                                 <h2 class="slider_header">
-                                    Discover Portugal
+                                    <?php the_sub_field('discover_portugal');?>
                                 </h2>
                                 <p class="slider_sub-header">
-                                    Click on the map reveal more info
+                                    <?php the_sub_field('click_on_the_map');?>
                                 </p>
 
                                 <h3 class="slider_country-header">
-                                    Discover Evora
-                                <p class="slider_country-description">
-                                    45% of the country’s GDP.
-                                    Home to most multinational companies in Portugal.
-                                    Dynamic financial and technological hub.
-                                    High real estate returns.
-                                </p>
+                                    <?php the_sub_field('evora-header'); ?>
+                                </h3>
+                                    <?php the_sub_field('evora-text'); ?>
                             </div>
                         </div>
                         

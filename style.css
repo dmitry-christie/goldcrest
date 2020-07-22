@@ -1779,6 +1779,11 @@ input[type='radio']:checked:after {
 	padding-left: 1em;
 }
 
+.text p {
+	color: #e0c575;
+    margin-bottom: 0;
+}
+
 .loop-item-container h2 {
 	margin-top: 0px;
 	color: #004162;
