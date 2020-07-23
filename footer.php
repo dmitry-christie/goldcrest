@@ -54,6 +54,35 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+
+
+
+<style>
+.cookieconsent a {
+  color: white;
+  text-decoration: underline;
+}
+
+.cookieconsent .button {
+  background: rgba(210,168,0,1);
+  padding: 5px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+</style>
+
+<?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                     <div class="cookieconsent" id="cookieconsent" style="position:fixed;padding:20px;left:0;bottom:0;background-color:#e0c575;color:#FFF;text-align:center;width:100%;z-index:9999999; display: none;">
+			We use cookies to ensure that we give you the best experience on our website. Our <a href="https://portugalbuyersagent.com/terms-conditions/">Terms and Coditions</a> 
+			<a href="#" id="consent_button" class="button" onclick="event.preventDefault(); acceptConsent();">I Agree</a>
+		</div>
+
+<?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
+                        <div class="cookieconsent" id="cookieconsent" style="position:fixed;padding:20px;left:0;bottom:0;background-color:#e0c575;color:#FFF;text-align:center;width:100%;z-index:9999999; display: none;">
+			We use cookies to ensure that we give you the best experience on our website. Our <a href="https://portugalbuyersagent.com/terms-conditions/">Terms and Coditions</a> 
+			<a href="#" id="consent_button" class="button" onclick="event.preventDefault(); acceptConsent();" style="color: white !important">I Agree</a>
+		</div>
+<?php endif; ?>
 <?php wp_footer(); ?>
 <script>
 window.onscroll = function() {
@@ -97,6 +126,29 @@ var menu = ['Lisbon', 'Porto', 'Braga', 'Faro', 'Coimbra', 'Evora'];
   })
   </script>
 
+<script>
+			if (!localStorage.getItem('cookieconsent')) {
+	
+			document.querySelector('.cookieconsent').style.display = 'block';
+		
+		
+	}
+			
+			var x = document.getElementById("consent_button");
+			
+			function acceptConsent() {
+				
+			
+			document.querySelector('.cookieconsent').style.display = 'none';
+			localStorage.setItem('cookieconsent', true);
+				
+			}
+			
+			
+
+
+
+</script>
 
 <script>
 

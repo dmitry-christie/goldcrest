@@ -12,46 +12,64 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<section class="error-404 not-found">
+		<section class="error-404 not-found container">
 			<header class="page-header">
 				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'goldcrest' ); ?></h1>
 			</header><!-- .page-header -->
 
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'goldcrest' ); ?></p>
+			<h2 class="section-header txt-center sm-gold-line"> <?php the_field('related_articles', 'option');?> </h2>
+                <div class="guides">
+                <?php
+                        $args = array(
+                            'post_type' => 'post',
+                            'post__not_in' => array (get_the_ID()),
 
-					<?php
-					get_search_form();
+							'posts_per_page' => 3,
+							'category__in' => wp_get_post_categories($post->ID),
+                        );
 
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
+                        
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'goldcrest' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
+                       
 
-					<?php
-					/* translators: %1$s: smiley */
-					$goldcrest_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'goldcrest' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$goldcrest_archive_content" );
+                        $post_query = new WP_Query($args);
 
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
+                        if($post_query->have_posts() ) {
+                            while($post_query->have_posts() ) {
+                                $post_query->the_post();
+                                ?>
 
-			</div><!-- .page-content -->
+                                <div style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>')">
+                                    <div class="guide colour">
+
+                                        <h5><?php the_title(); ?></h5>
+                                        <a href="<?php the_permalink(); ?>">
+                                            <div ><?php $read_more_global_button_text = get_field('read_more_global_button_text', 'option'); 
+                            if ($read_more_global_button_text) {
+                                echo $read_more_global_button_text; 
+                            } else { 
+                                echo 'Read more '; 
+                            } 
+                            ?><img src="<?php echo get_template_directory_uri(); ?>/images/arrow-button.png"></div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+
+                              
+                                <?php
+                                }
+                            }
+                            wp_reset_query();
+                    ?>
+
+
+
+                  
+                   
+                </div>
+
 		</section><!-- .error-404 -->
 
 	</main><!-- #main -->
