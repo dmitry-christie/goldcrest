@@ -1779,7 +1779,7 @@ input[type='radio']:checked:after {
 	padding-left: 1em;
 }
 
-.text p {
+.swiper-container .text p {
 	color: #e0c575;
     margin-bottom: 0;
 }

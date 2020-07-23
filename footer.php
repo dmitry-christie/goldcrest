@@ -79,7 +79,7 @@
 
 <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
                         <div class="cookieconsent" id="cookieconsent" style="position:fixed;padding:20px;left:0;bottom:0;background-color:#e0c575;color:#FFF;text-align:center;width:100%;z-index:9999999; display: none;">
-			We use cookies to ensure that we give you the best experience on our website. Our <a href="https://portugalbuyersagent.com/terms-conditions/">Terms and Coditions</a> 
+			We use cookies to ensure that we give you the best experience on our website. Our <a href="https://portugalbuyersagent.com/pt-pt/terms-and-conditions/">Terms and Coditions</a> 
 			<a href="#" id="consent_button" class="button" onclick="event.preventDefault(); acceptConsent();" style="color: white !important">I Agree</a>
 		</div>
 <?php endif; ?>
