@@ -643,8 +643,8 @@
                                             <?php $header = get_sub_field('header'); if($header) { ?><h5 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h5> <?php } ?>
                                             <img class="more" src="<?php 
                                                                         $more_button_flip_cards = get_field('more_button_flip_cards', 'option'); 
-                                                                        if ($more_button_flip_cards) {
-                                                                            echo $more_button_flip_cards; 
+                                                                        if ( ICL_LANGUAGE_CODE=='pt-pt') {
+                                                                            echo get_template_directory_uri() . '/images/MAIS.png'; 
                                                                         } else { 
                                                                             echo get_template_directory_uri() . '/images/more.png'; 
                                                                         } 
