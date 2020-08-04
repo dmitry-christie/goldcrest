@@ -1676,7 +1676,6 @@ button.swiper-pagination-bullet {
 
                         <?php
             $form = get_sub_field('form');
-            var_dump($form);
             
             if($form) {
                 echo apply_filters( 'the_content', $form);
@@ -1716,7 +1715,6 @@ button.swiper-pagination-bullet {
                         <div class="form-container">
                             <?php $form = get_sub_field('form');
 
-var_dump($form);
                         echo do_shortcode($form);
                         ?>
                         </div>
