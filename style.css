@@ -2503,23 +2503,23 @@ td {
 			display: none;
 		}
 		
-		.menu-main-container {
+		.menu-main-container, .menu-menu-1-container {
 			padding: 1em;
 		}
 
-		.menu-main-container ul {
+		.menu-main-container ul, .menu-menu-1-container ul {
 			list-style-type: none;
 		}
 
-		.menu-main-container ul a, .menu-main-container ul a:visited, .menu-main-container ul a {
+		.menu-main-container ul a, .menu-main-container ul a:visited, .menu-main-container ul a, .menu-menu-1-container ul a, .menu-menu-1-container ul a:visited {
 			color: #b5a160;
 		}
 
-		.menu-main-container li > ul {
+		.menu-main-container li > ul, .menu-menu-1-container li > ul {
 			margin-left: 0px;
 		}
 
-		.menu-main-container .sub-menu a {
+		.menu-main-container .sub-menu a, .menu-menu-1-container .sub-menu a {
 			color: #013552;
 		}
 
