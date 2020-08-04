@@ -1118,6 +1118,8 @@ left: -13px;
 	float: right;
 }
 
+.
+
 .site-branding img {
 	width: 300px;
 	max-width: 300px;
@@ -1659,9 +1661,13 @@ input[type='radio']:checked:after {
 	border: 2px solid white;
 }
 
-._field48 {
+._field48, ._field58 {
 	display: flex;
 	margin: 0.5em 0px;
+}
+
+.field8 {
+	margin-bottom: 1em;
 }
 
 
