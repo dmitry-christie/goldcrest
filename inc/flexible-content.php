@@ -593,7 +593,6 @@ Ler mais                    <?php endif; ?>
                            $args['posts_per_page'] =  6;
                         }
 
-                        var_dump($args);
 
                        
 
