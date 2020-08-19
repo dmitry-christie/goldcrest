@@ -477,7 +477,6 @@
                            $args['posts_per_page'] =  6;
                         }
 
-                        var_dump($args);
 
                         $post_query = new WP_Query($args);
 
@@ -516,13 +515,13 @@
 							?>
                         </div><!-- .entry-content -->
                         
-                        <a href="<?php the_permalink(); ?>">
-                            <div class="button button_gold"><?php if(ICL_LANGUAGE_CODE=='en'): ?>Read More                    <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
-Ler mais                    <?php endif; ?>
-</div>
-                        </a>
+                        
 
-						
+						<a href="<?php the_permalink(); ?>">
+						<div class="read-more"> Read More <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-button.png"></div>
+
+                                        
+						</a>
 
 					</div>				
 
@@ -541,7 +540,10 @@ Ler mais                    <?php endif; ?>
                     ?>
                     
                     
-                    <a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">Read More</a>
+                    <a href="<?php echo esc_url( $category_link ); ?>" ><div class="button button_gold">                    <?php if(ICL_LANGUAGE_CODE=='en'): ?>
+Read More                    <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
+Ler mais                    <?php endif; ?>
+</div></a>
 
 
             <!-- END Blog posts loop -->
