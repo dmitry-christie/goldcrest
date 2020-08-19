@@ -2689,4 +2689,8 @@ td {
 		
 	}
 
-
+.read-more-articles {
+	
+    display: flex;
+    justify-content: center;
+}

@@ -540,7 +540,7 @@
                     ?>
                     
                     
-                    <a href="<?php echo esc_url( $category_link ); ?>" ><div class="button button_gold">                    <?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                    <a class="read-more-articles container" href="<?php echo esc_url( $category_link ); ?>" ><div class="button button_gold">                    <?php if(ICL_LANGUAGE_CODE=='en'): ?>
 Read More                    <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
 Ler mais                    <?php endif; ?>
 </div></a>
