@@ -643,6 +643,10 @@ Ler mais                    <?php endif; ?>
 
 
                 <?php
+
+                if (get_sub_field('guides_category')) {
+
+               
     // Get the ID of a given category
  
     // Get the URL of this category
@@ -654,7 +658,7 @@ Ler mais                    <?php endif; ?>
                                 Read More                    
                         <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
                                 Ler mais                    
-                        <?php endif; ?>
+                        <?php endif;  } ?>
                     </div>
                 </a>
 
