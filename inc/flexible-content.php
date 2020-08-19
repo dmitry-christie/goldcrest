@@ -457,7 +457,7 @@
              <!-- Blog posts loop -->
              <?php elseif( get_row_layout() == 'blogs_loop' ): ?>
              <?php if(get_sub_field('section_header')) { ?><h2 class="section-header sm-gold-line"> <?php the_sub_field('section_header'); ?> </h2><?php } ?>
-                <div class="the-loop archive-container">
+                <div class="the-loop container archive-container">
 
                     <?php
                         $args = array(
