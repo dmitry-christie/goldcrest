@@ -583,7 +583,7 @@ Ler mais                    <?php endif; ?>
                         );
 
                         if(get_sub_field('guides_category')) {
-                                  $args['category_name'] = get_sub_field('guides_category');
+                                  $args['cat'] = get_sub_field('guides_category');
                         }
 
                         if(get_sub_field('number_of_posts')) { 
