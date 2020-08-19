@@ -456,7 +456,7 @@
 
              <!-- Blog posts loop -->
              <?php elseif( get_row_layout() == 'blogs_loop' ): ?>
-             <?php if(get_sub_field('section_header')) { ?><h2 class="section-header container sm-gold-line"> <?php the_sub_field('section_header'); ?> </h2><?php } ?>
+             <?php if(get_sub_field('section_header')) { ?><h2 class="section-header txt-center container sm-gold-line"> <?php the_sub_field('section_header'); ?> </h2><?php } ?>
                 <div class="the-loop container archive-container">
 
                     <?php
@@ -464,9 +464,15 @@
                             'post_type' => 'post',
                         );
 
+                        
                         if(get_sub_field('posts_category')) { 
-                            $posts_per_page = get_sub_field('posts_category');
-                            $args['posts_per_page'] = $posts_per_page;
+                            $posts_category = get_sub_field('posts_category');
+                            $args['cat'] = $posts_category;
+                        }
+
+                        if(get_sub_field('number_of_posts')) { 
+                            $number_of_posts = get_sub_field('number_of_posts');
+                            $args['posts_per_page'] = $number_of_posts;
                         } else {
                            $args['posts_per_page'] =  6;
                         }
@@ -525,13 +531,14 @@
                     ?>
                     </div>
 
-                    <?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                        <?php echo apply_filters( 'the_content', '[ajax_load_more container_type="div" posts_per_page="6" css_classes="the-loop"  offset="6" pause="true" scroll="false" button_label="Older Entries"]'); ?>
+                    <?php
 
-                    <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
-                        <?php echo  apply_filters( 'the_content', '[ajax_load_more container_type="div" posts_per_page="6" css_classes="the-loop"  offset="6" pause="true" scroll="false" button_label="Posts Antigos" category="cidadania-europeia,investir-na-europa,mercado-imobiliario,residencia-europeia,vida-na-europa,visto-europeu"]'); ?>
+                        $category_link = get_category_link( $posts_category );
+                    ?>
+                    
+                    
+                    <a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">Read More</a>
 
-                    <?php endif; ?>
 
             <!-- END Blog posts loop -->
 
