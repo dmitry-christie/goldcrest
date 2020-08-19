@@ -456,7 +456,7 @@
 
              <!-- Blog posts loop -->
              <?php elseif( get_row_layout() == 'blogs_loop' ): ?>
-             <?php if(get_sub_field('section_header')) { ?><h2 class="section-header sm-gold-line"> <?php the_sub_field('section_header'); ?> </h2><?php } ?>
+             <?php if(get_sub_field('section_header')) { ?><h2 class="section-header container sm-gold-line"> <?php the_sub_field('section_header'); ?> </h2><?php } ?>
                 <div class="the-loop container archive-container">
 
                     <?php
@@ -485,7 +485,8 @@
 					</a>
 					<div class="text">
 						<header class="entry-header">
-							<?php
+                        <a href="<?php the_permalink(); ?>">
+<?php
 							if ( is_singular() ) :
 								the_title( '<h1 class="entry-title">', '</h1>' );
 							else :
@@ -495,7 +496,8 @@
 							if ( 'post' === get_post_type() ) :
 								?>
 								
-							<?php endif; ?>
+                            <?php endif; ?>
+                            </a>
 						</header><!-- .entry-header -->
 
 						
