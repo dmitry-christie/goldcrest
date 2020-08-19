@@ -477,6 +477,8 @@
                            $args['posts_per_page'] =  6;
                         }
 
+                        print_r($args);
+
                         $post_query = new WP_Query($args);
 
                         if($post_query->have_posts() ) {
