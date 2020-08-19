@@ -640,7 +640,15 @@ Ler mais                    <?php endif; ?>
                   
                    
                 </div>
-                <a class="read-more-articles container" href="<?php echo esc_url( $category_link ); ?>" >
+
+
+                <?php
+    // Get the ID of a given category
+ 
+    // Get the URL of this category
+    $category_link = get_category_link(get_sub_field('guides_category') );
+?>
+                <a class="read-more-articles space container" href="<?php echo esc_url( $category_link ); ?>" >
                     <div class="button button_gold">
                         <?php if(ICL_LANGUAGE_CODE=='en'): ?>
                                 Read More                    
