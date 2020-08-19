@@ -1290,7 +1290,7 @@ header .button {
 
 .blurbs, .steps {
 	display: flex;
-    justify-content: space-between;
+    justify-content: center;
    
     flex-wrap: wrap;
 }
@@ -1299,7 +1299,7 @@ header .button {
 	max-width: 19%;
 	background: white;
 	padding: 15px;
-	 flex: 0 1 150px;
+	flex: 0 1 270px;
 }
 
 .blurb_type_3_container .blurb{
