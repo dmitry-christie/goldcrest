@@ -485,19 +485,20 @@
 					</a>
 					<div class="text">
 						<header class="entry-header">
-                        <a href="<?php the_permalink(); ?>">
-<?php
-							if ( is_singular() ) :
-								the_title( '<h1 class="entry-title">', '</h1>' );
-							else :
+                        <h2 class="entry-title"><a href="<?php the_permalink(); ?>">
+                         <?php the_title(); ?>
+                            </a>
+                            </h2>
+                            <?php
+							
 								the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-							endif;
+							
 
 							if ( 'post' === get_post_type() ) :
 								?>
 								
                             <?php endif; ?>
-                            </a>
+                            
 						</header><!-- .entry-header -->
 
 						
