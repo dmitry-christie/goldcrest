@@ -457,7 +457,7 @@
              <!-- Blog posts loop -->
              <?php elseif( get_row_layout() == 'blogs_loop' ): ?>
              <?php if(get_sub_field('section_header')) { ?><h2 class="section-header sm-gold-line"> <?php the_sub_field('section_header'); ?> </h2><?php } ?>
-                <div class="the-loop">
+                <div class="the-loop archive-container">
 
                     <?php
                         $args = array(
@@ -477,30 +477,45 @@
                             while($post_query->have_posts() ) {
                                 $post_query->the_post();
                                 ?>
-                                <div class="post">
-                                    <a href="<?php the_permalink(); ?>">
-                                    <div class="thumbnail-container" style="background-image: url('<?php the_post_thumbnail_url('medium'); ?>'); height: 220px;">
-                                    </div>
-                                    <div class="text">
+                                	<div class="loop-item-container">
+					<a href="<?php the_permalink(); ?>">
+						<div class="thumbnail" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>'">
+							
+						</div>
+					</a>
+					<div class="text">
+						<header class="entry-header">
+							<?php
+							if ( is_singular() ) :
+								the_title( '<h1 class="entry-title">', '</h1>' );
+							else :
+								the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+							endif;
 
-                                    
-                                        <h5><?php the_title(); ?></h5>
-                                        <?php
+							if ( 'post' === get_post_type() ) :
+								?>
+								
+							<?php endif; ?>
+						</header><!-- .entry-header -->
+
+						
+
+						<div class="entry-content">
+							<?php
+							the_excerpt();	
+							?>
+						</div><!-- .entry-content -->
+
+						<a href="<?php the_permalink(); ?>">
+						<div class="read-more"> Read More <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-button.png"></div>
+
                                         
-                                            the_excerpt();
-                                         ?> 
-                                        <div class="button"> <?php 
-                            $read_more_global_button_text = get_field('read_more_global_button_text', 'option'); 
-                            if ($read_more_global_button_text) {
-                                echo $read_more_global_button_text; 
-                            } else { 
-                                echo 'Read more '; 
-                            } 
-                        ?> <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-button.png"></div>
+						</a>
 
-                                        </div>
-                                    </a>
-                                </div>
+					</div>				
+
+				</div>
+
                                 <?php
                                 }
                             }
