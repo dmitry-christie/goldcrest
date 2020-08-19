@@ -477,7 +477,7 @@
                            $args['posts_per_page'] =  6;
                         }
 
-                        print_r($args);
+                        var_dump($args);
 
                         $post_query = new WP_Query($args);
 
