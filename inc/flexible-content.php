@@ -514,13 +514,15 @@
 							<?php
 							the_excerpt();	
 							?>
-						</div><!-- .entry-content -->
+                        </div><!-- .entry-content -->
+                        
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="button button_gold"><?php if(ICL_LANGUAGE_CODE=='en'): ?>Read More                    <?php elseif(ICL_LANGUAGE_CODE=='pt-pt'): ?>
+Ler mais                    <?php endif; ?>
+</div>
+                        </a>
 
-						<a href="<?php the_permalink(); ?>">
-						<div class="read-more"> Read More <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-button.png"></div>
-
-                                        
-						</a>
+						
 
 					</div>				
 
