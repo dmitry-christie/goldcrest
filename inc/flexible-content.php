@@ -1607,10 +1607,10 @@ button.swiper-pagination-bullet {
                                 </p>
 
                                 <h3 class="slider_country-header">
-                                    <!-- Discover Lisboa --> <?php the_sub_field('Lisboa-header'); ?>
+                                    <!-- Discover Lisboa --> <?php the_sub_field('lisbon-header'); ?>
                                 </h3>
                                     
-                                    <?php the_sub_field('Lisboa-text'); ?>
+                                    <?php the_sub_field('lisbon-text'); ?>
                                 
                             </div>
                         </div>
@@ -1674,9 +1674,9 @@ button.swiper-pagination-bullet {
                                 </p>
 
                                 <h3 class="slider_country-header">
-                                    <?php the_sub_field('Alentejo-header'); ?>
+                                    <?php the_sub_field('evora-header'); ?>
                                 </h3>
-                                    <?php the_sub_field('Alentejo-text'); ?>
+                                    <?php the_sub_field('evora-text'); ?>
                             </div>
                         </div>
                         
