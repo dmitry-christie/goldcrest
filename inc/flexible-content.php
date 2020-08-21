@@ -1643,9 +1643,9 @@ button.swiper-pagination-bullet {
                                 </p>
 
                                 <h3 class="slider_country-header">
-                                    <?php the_sub_field('Algarve-header'); ?>
+                                    <?php the_sub_field('faro-header'); ?>
                                 </h3>
-                                    <?php the_sub_field('Algarve-text'); ?>
+                                    <?php the_sub_field('faro-text'); ?>
                             </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-coimbra.jpg');">
