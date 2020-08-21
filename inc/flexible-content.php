@@ -1367,24 +1367,24 @@ button.swiper-pagination-bullet {
 
                
 
-                .pagination-map .Lisbon {
+                .pagination-map .Lisboa {
                     position: relative;
                     left: 40px;
                     top: 350px;
                 }
-                .pagination-map .swiper-pagination-bullet-active.Lisbon{
+                .pagination-map .swiper-pagination-bullet-active.Lisboa{
                     left: 20px;
                     top: 300px;
                 }
 
 
-                .pagination-map .Faro {
+                .pagination-map .Algarve {
                     position: relative;
                     left: 140px;
                     top: 550px;
                 }
 
-                .pagination-map .swiper-pagination-bullet-active.Faro {
+                .pagination-map .swiper-pagination-bullet-active.Algarve {
                     left: 120px;
                     top: 500px;
                 }
@@ -1401,13 +1401,13 @@ button.swiper-pagination-bullet {
                 }
 
 
-                .pagination-map .Evora {
+                .pagination-map .Alentejo {
                     position: relative;
                     left: 150px;
                     top: 330px;
                 }
 
-                .pagination-map .swiper-pagination-bullet-active.Evora {
+                .pagination-map .swiper-pagination-bullet-active.Alentejo {
                     left: 130px;
                     top: 280px;
                 }
@@ -1426,15 +1426,15 @@ button.swiper-pagination-bullet {
                 }
 
                 
-                .pagination-map .swiper-pagination-bullet-active.Lisbon:before {
-                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-lisbon.png);
+                .pagination-map .swiper-pagination-bullet-active.Lisboa:before {
+                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-Lisboa.png);
                     visibility: visible;
                     opacity: 1;
                    
                 }
 
-                .pagination-map .swiper-pagination-bullet-active.Faro:before {
-                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-faro.png);
+                .pagination-map .swiper-pagination-bullet-active.Algarve:before {
+                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-Algarve.png);
                     visibility: visible;
                     opacity: 1;
                    
@@ -1446,8 +1446,8 @@ button.swiper-pagination-bullet {
                    
                 }
 
-                .pagination-map .swiper-pagination-bullet-active.Evora:before {
-                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-evora.png);
+                .pagination-map .swiper-pagination-bullet-active.Alentejo:before {
+                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-Alentejo.png);
                     visibility: visible;
                     opacity: 1;
                    
@@ -1597,7 +1597,7 @@ button.swiper-pagination-bullet {
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-lisbon.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-Lisboa.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
                                     <?php the_sub_field('discover_portugal');?>
@@ -1607,10 +1607,10 @@ button.swiper-pagination-bullet {
                                 </p>
 
                                 <h3 class="slider_country-header">
-                                    <!-- Discover Lisbon --> <?php the_sub_field('lisbon-header'); ?>
+                                    <!-- Discover Lisboa --> <?php the_sub_field('Lisboa-header'); ?>
                                 </h3>
                                     
-                                    <?php the_sub_field('lisbon-text'); ?>
+                                    <?php the_sub_field('Lisboa-text'); ?>
                                 
                             </div>
                         </div>
@@ -1633,7 +1633,7 @@ button.swiper-pagination-bullet {
                             </div>
                         </div>
            
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-faro.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-Algarve.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
                                     <?php the_sub_field('discover_portugal');?>
@@ -1643,9 +1643,9 @@ button.swiper-pagination-bullet {
                                 </p>
 
                                 <h3 class="slider_country-header">
-                                    <?php the_sub_field('faro-header'); ?>
+                                    <?php the_sub_field('Algarve-header'); ?>
                                 </h3>
-                                    <?php the_sub_field('faro-text'); ?>
+                                    <?php the_sub_field('Algarve-text'); ?>
                             </div>
                         </div>
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-coimbra.jpg');">
@@ -1664,7 +1664,7 @@ button.swiper-pagination-bullet {
 
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-evora.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-Alentejo.jpg');">
                         <div class="text">
                                 <h2 class="slider_header">
                                     <?php the_sub_field('discover_portugal');?>
@@ -1674,9 +1674,9 @@ button.swiper-pagination-bullet {
                                 </p>
 
                                 <h3 class="slider_country-header">
-                                    <?php the_sub_field('evora-header'); ?>
+                                    <?php the_sub_field('Alentejo-header'); ?>
                                 </h3>
-                                    <?php the_sub_field('evora-text'); ?>
+                                    <?php the_sub_field('Alentejo-text'); ?>
                             </div>
                         </div>
                         
