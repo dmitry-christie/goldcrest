@@ -1389,13 +1389,13 @@ button.swiper-pagination-bullet {
                     top: 500px;
                 }
 
-                .pagination-map .Coimbra {
+                .pagination-map .Centro {
                     position: relative;
                     left: 110px;
                     top: 200px;
                 }
 
-                .pagination-map .swiper-pagination-bullet-active.Coimbra {
+                .pagination-map .swiper-pagination-bullet-active.Centro {
                     left: 95px;
                     top: 150px;
                 }
@@ -1439,7 +1439,7 @@ button.swiper-pagination-bullet {
                     opacity: 1;
                    
                 }
-                .pagination-map .swiper-pagination-bullet-active.Coimbra:before {
+                .pagination-map .swiper-pagination-bullet-active.Centro:before {
                     content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-coimbra.png);
                     visibility: visible;
                     opacity: 1;
