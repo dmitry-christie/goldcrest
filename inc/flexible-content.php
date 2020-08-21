@@ -1597,7 +1597,7 @@ button.swiper-pagination-bullet {
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-Lisboa.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-lisbon.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
                                     <?php the_sub_field('discover_portugal');?>
@@ -1633,7 +1633,7 @@ button.swiper-pagination-bullet {
                             </div>
                         </div>
            
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-Algarve.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-faro.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">
                                     <?php the_sub_field('discover_portugal');?>
@@ -1664,7 +1664,7 @@ button.swiper-pagination-bullet {
 
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-Alentejo.jpg');">
+                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-evora.jpg');">
                         <div class="text">
                                 <h2 class="slider_header">
                                     <?php the_sub_field('discover_portugal');?>
