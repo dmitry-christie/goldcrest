@@ -1365,15 +1365,7 @@ button.swiper-pagination-bullet {
                     top: 80px;
                 }
 
-                .pagination-map .Braga {
-                    position: relative;
-                    left: 110px;
-                    top: 30px;
-                }
-                .pagination-map .swiper-pagination-bullet-active.Braga {
-                    left: 90px;
-                    top: 10px;
-                }
+               
 
                 .pagination-map .Lisbon {
                     position: relative;
@@ -1433,12 +1425,7 @@ button.swiper-pagination-bullet {
                    
                 }
 
-                .pagination-map .swiper-pagination-bullet-active.Braga:before {
-                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-braga.png);
-                    visibility: visible;
-                    opacity: 1;
-                   
-                }
+                
                 .pagination-map .swiper-pagination-bullet-active.Lisbon:before {
                     content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-lisbon.png);
                     visibility: visible;
@@ -1645,23 +1632,7 @@ button.swiper-pagination-bullet {
                                 
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-braga.jpg');">
-                            <div class="text">
-                                <h2 class="slider_header">
-                                    <?php the_sub_field('discover_portugal');?>
-                                </h2>
-                                <p class="slider_sub-header">
-                                    <?php the_sub_field('click_on_the_map');?>
-                                </p>
-
-                                <h3 class="slider_country-header">
-                                    <?php the_sub_field('braga-header'); ?>
-                                </h3>
-                                <p class="slider_country-description">
-                                    <?php the_sub_field('braga-text'); ?>
-                                </p>
-                            </div>
-                        </div>
+           
                         <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/slider/slide-faro.jpg');">
                             <div class="text">
                                 <h2 class="slider_header">

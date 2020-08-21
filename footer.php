@@ -98,7 +98,7 @@ window.onscroll = function() {
 <script src="<?php echo get_template_directory_uri(); ?>/js/swiper.js"></script>
 <script>
 
-var menu = ['Lisboa', 'Porto', 'Braga', 'Algarve', 'Centro', 'Alantejo'];
+var menu = ['Lisboa', 'Porto',  'Algarve', 'Centro', 'Alantejo'];
 
   var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
