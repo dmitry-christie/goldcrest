@@ -1496,6 +1496,13 @@ footer .menu .separator {
 	align-items: center;
 }
 
+#footer-whatsapp span {
+	text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
 
 .copyright-container p {
 	margin: 1.5em 0px;
