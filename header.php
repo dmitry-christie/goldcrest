@@ -85,6 +85,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <?php wp_body_open(); ?>
 <div id="page" class="site">
+	<div id="header-mobile-whatsapp" class="footer-mobile-whatsapp">
+			<a target="_blank" href="<?php the_field('whats_app-url', 'options'); ?>">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/ICON-WHATSAPP.png">
+				<span><?php the_field('whats_app-text', 'options'); ?></span>
+			</a>
+	</div>
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'goldcrest' ); ?></a>
 	<div id="top-bar-outer" class="top-bar-outer">	
 		<div class="top-bar container">

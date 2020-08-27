@@ -2003,7 +2003,6 @@ td {
 }
 
 
-@media screen and (min-width: 769px) { 
 	
 	 
 @media screen and (max-width: 768px) { 
@@ -2693,4 +2692,21 @@ td {
 	
     display: flex;
     justify-content: center;
+}
+
+
+#header-mobile-whatsapp {
+	display: none;
+}
+
+@media (max-width: 900px) {
+	#header-mobile-whatsapp {
+		position: fixed;
+
+		
+			display: block;
+			background-color: #e0c575;
+			justify-content: center;
+		
+	}
 }
