@@ -40,6 +40,8 @@
 					<?php $social_link_linked = get_field('social_links_linked', 'options'); if(!empty($social_link_linked)) {  ?><a href="<?php the_field('social_links_linked', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-linked.png"></a><?php } ?>
 					<?php $social_links_facebook = get_field('social_links-facebook', 'options'); if(!empty($social_links_facebook)) {  ?><a href="<?php the_field('social_links-facebook', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-fb.png"></a><?php } ?>
 					<?php $social_links_instagram_url = get_field('social_links-instagram_url', 'options'); if(!empty($social_links_instagram_url)) {  ?><a href="<?php the_field('social_links-instagram_url', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-ig.png"> </a><?php } ?>
+					<?php $social_links_twitter_url = get_field('social_links-twitter_url', 'options'); if(!empty($social_links_twitter_url)) {  ?><a href="<?php the_field('social_links-twitter_url', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/icon-twitter-goldcrest.png"></a><?php } ?>
+
 			</div>
 		</div>
 		<hr class="container">
