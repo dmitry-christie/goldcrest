@@ -2719,5 +2719,11 @@ td {
 	}
 	#header-mobile-whatsapp a {
 		color: white;
+		display: flex;
+		align-items: center;
+	}
+
+	#header-mobile-whatsapp img {
+		margin-right: 10px;
 	}
 }
