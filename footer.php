@@ -46,7 +46,16 @@
 		</div>
 		<hr class="container">
 		<div class="copyright-container container">
-      <p><span class="company_name">Goldcrest Advisors </span>- All rights reserved - <?php echo date("Y"); ?></p>
+      		<p>
+			  <span class="company_name">Goldcrest Advisors </span>- All rights reserved - 2019 - <?php echo date("Y"); ?>
+			</p>
+			<div id="footer-whatsapp" class="footer-mobile-whatsapp">
+				<a target="_blank" href="<?php the_field('whats_app-url', 'options'); ?>">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/ICON-WHATSAPP.png">
+				<span><?php the_field('whats_app-text', 'options'); ?></span>
+			</a>
+		</div>
+
       <div class="social social-mobile">
 					<?php $social_link_linked = get_field('social_links_linked', 'options'); if(!empty($social_link_linked)) {  ?><a href="<?php the_field('social_links_linked', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-linked.png"></a><?php } ?>
 					<?php $social_links_facebook = get_field('social_links-facebook', 'options'); if(!empty($social_links_facebook)) {  ?><a href="<?php the_field('social_links-facebook', 'options');?>"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-fb.png"></a><?php } ?>
