@@ -1900,7 +1900,7 @@ button.swiper-pagination-bullet {
 
                             <?php $k_timeline_stamp--; ?> 
                             <style>
-                                <?php echo '.timeline_stamp-' . $k_timeline_stamp . ' .separator {';?> 
+                                <?php echo '.timeline_stamp-' . $k_timeline_stamp . ' .line {';?> 
                                     display: none;
                                 }
                             </style>
