@@ -1774,6 +1774,10 @@ button.swiper-pagination-bullet {
                         font-weight: 400;
                     }
 
+                    .timeline_stamp_item .circle {
+                        color: #004162;
+                    }
+
                     .timeline_stamp_item .separator {
                         display: flex;
                         flex-direction: column;
@@ -1873,7 +1877,7 @@ button.swiper-pagination-bullet {
                                                 <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/images/icons-timeline/GC-ICON-' . $icon . '.png'; ?>">
 
                                             </div>
-                                            <div class="separator" >
+                                            <div class="separator id-<?php $k_timeline_stamp; ?>" >
                                                 <div class="circle">
                                                     <?php echo $k_timeline_stamp; ?>
                                                 </div>
@@ -1896,8 +1900,8 @@ button.swiper-pagination-bullet {
 
                             <?php $k_timeline_stamp--; ?> 
                             <style>
-                                <?php echo '.timeline_stamp-' . $k_timeline_stamp . ' .text {';?> 
-                                    min-height: 100px !important;
+                                <?php echo '.timeline_stamp-' . $k_timeline_stamp . ' .separator {';?> 
+                                    display: none;
                                 }
                             </style>
                           
