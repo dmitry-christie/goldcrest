@@ -1734,6 +1734,138 @@ button.swiper-pagination-bullet {
             <!-- END two buttons -->
 
 
+            <?php elseif( get_row_layout() == 'timeline-vertical' ): ?>
+               <!-- Timeline vertical -->
+                <style>
+                    .timeline_stamp_item  {
+                        display: flex;
+                        justify-content: center;
+                        width: 600px;
+                        max-width: 90%;
+                    }
+
+                    .timeline_stamp_item  h5, .timeline_stamp_item  strong {
+                        text-transform: uppercase;
+                        color: #007ac1;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        width: 130px;
+                        text-align: right;
+                        margin-right: 1em;
+                    }
+
+                    .timeline_stamp_item  .text {
+                        min-height: 200px;
+                        width: 200px;
+                        margin-left: 1em;
+                    }
+
+                    .timeline_stamp_item  .text p:first-of-type {
+                        margin: 0px;
+
+                    }
+
+                    .timeline_stamp {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .timeline_stamp_item .time{
+                        width: 200px;
+                    }
+
+                    .arrow {
+                        display: flex;
+                        align-items: flex-end;
+                        padding: 2px;
+                        
+                    }
+
+               
+
+
+                                            
+                    .timeline_stamp_item .text ul {
+                        margin-left: 2em;
+                        list-style: none; /* Remove default bullets */
+                    }
+
+                    .timeline_stamp_item .text ul li::before {
+                        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                        color: #00b4c5; /* Change the color */
+                        font-weight: bold; /* If you want it to be bold */
+                        display: inline-block; /* Needed to add space between the bullet and the text */
+                        width: 1em; /* Also needed for space (tweak if needed) */
+                        margin-left: -1em; /* Also needed for space (tweak if needed) */
+                        }
+
+                        @media (max-width: 700px) {
+                            .timeline_stamp_item  .text {
+                                width: 130px;
+                            }
+
+
+                    .timeline_stamp_item  h5, .timeline_stamp_item  strong {
+                     
+                        width: 80px;
+                       
+                    }
+
+                    
+
+                        }
+                </style>
+               
+                <div class="steps-container container">    
+                    <h2 class="section-header txt-center sm-gold-line space"> 
+                        <?php the_sub_field('section_header'); ?> 
+                    </h2>
+                   
+
+                    <?php $k_timeline_stamp = 1; ?>
+                    <?php if( have_rows('timeline_stamp') ): ?>
+                        <div class="timeline_stamp">
+                            <?php while ( have_rows('timeline_stamp') ) : the_row(); ?>
+                                <div class="timeline_stamp_item timeline_stamp-<?php echo $k_timeline_stamp; ?>">
+                            
+
+                                            <div class="time">
+                                                <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/images/icons/GC-ICON-' . $icon . '.png'; ?>">
+
+                                            </div>
+                                            <div class="arrow" ">
+                                                <?php echo $k_timeline_stamp; ?>
+                                            </div>
+                                           
+                                      
+                                        <div class="text"><?php the_sub_field('text');?></div>
+
+                                        
+                                </div>
+                                
+
+                               
+                                <?php $k_timeline_stamp++; ?> 
+                            <?php endwhile; ?>
+
+                            <?php $k_timeline_stamp--; ?> 
+                            <style>
+                                <?php echo '.timeline_stamp-' . $k_timeline_stamp . ' .text {';?> 
+                                    min-height: 100px !important;
+                                }
+                            </style>
+                          
+
+                        </div>
+                    <?php endif; ?>
+                 
+                   
+                </div>
+                <!-- END Timeline vertical-->
+
+
+
              <!-- Tiles -->
 
              
