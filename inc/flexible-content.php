@@ -1903,6 +1903,12 @@ button.swiper-pagination-bullet {
                                 <?php echo '.timeline_stamp-' . $k_timeline_stamp . ' .line {';?> 
                                     display: none;
                                 }
+
+                                <?php echo '.timeline_stamp-' . $k_timeline_stamp . ' .sepator {';?> 
+ {
+    
+                                    justify-content: flex-start;
+                                }
                             </style>
                           
 
