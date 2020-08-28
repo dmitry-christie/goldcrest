@@ -1737,6 +1737,9 @@ button.swiper-pagination-bullet {
             <?php elseif( get_row_layout() == 'timeline-vertical' ): ?>
                <!-- Timeline vertical -->
                 <style>
+
+
+                    
                     .timeline_stamp_item  {
                         display: flex;
                         justify-content: center;
@@ -1758,6 +1761,20 @@ button.swiper-pagination-bullet {
                         min-height: 200px;
                         width: 200px;
                         margin-left: 1em;
+                    }
+
+                    .timeine_stamp_item .icon {
+                        width: 200px;
+                    }
+
+                    .timeline_stmap_item .text h3 {
+                        color: #004162;
+                        text-transform: uppercase;
+                    }
+
+                    .timeline_stamp .circle {
+                        border: 1px solid grey;
+                        border-radisu: 50%;
                     }
 
                     .timeline_stamp_item  .text p:first-of-type {
@@ -1831,7 +1848,7 @@ button.swiper-pagination-bullet {
                             
 
                                             <div class="icon">
-                                                <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/images/icons/GC-ICON-' . $icon . '.png'; ?>">
+                                                <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/images/icons-timeline/GC-ICON-' . $icon . '.png'; ?>">
 
                                             </div>
                                             <div class="separator" ">
