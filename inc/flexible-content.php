@@ -1830,16 +1830,22 @@ button.swiper-pagination-bullet {
                                 <div class="timeline_stamp_item timeline_stamp-<?php echo $k_timeline_stamp; ?>">
                             
 
-                                            <div class="time">
+                                            <div class="icon">
                                                 <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/images/icons/GC-ICON-' . $icon . '.png'; ?>">
 
                                             </div>
-                                            <div class="arrow" ">
-                                                <?php echo $k_timeline_stamp; ?>
+                                            <div class="separator" ">
+                                                <div class="circle">
+                                                    <?php echo $k_timeline_stamp; ?>
+                                                </div>
+                                                <div class="line">
+                                                </div>
                                             </div>
                                            
                                       
-                                        <div class="text"><?php the_sub_field('text');?></div>
+                                        <div class="text">
+                                            <?php the_sub_field('text');?>
+                                        </div>
 
                                         
                                 </div>
