@@ -1770,6 +1770,8 @@ button.swiper-pagination-bullet {
                     .timeline_stamp_item .text h3 {
                         color: #004162;
                         text-transform: uppercase;
+                        margin-top: 0px;
+                        font-weight: 400;
                     }
 
                     .timeline_stamp_item .separator {
