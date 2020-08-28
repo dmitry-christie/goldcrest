@@ -1767,16 +1767,23 @@ button.swiper-pagination-bullet {
                         width: 200px;
                     }
 
-                    .timeline_stmap_item .text h3 {
+                    .timeline_stamp_item .text h3 {
                         color: #004162;
                         text-transform: uppercase;
                     }
 
-                    .timeline_stmap_item .separator {
+                    .timeline_stamp_item .separator {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+                    }
+
+                    .timeline_stmap_item .line {
+                        height: 100%;
+                        width: 1px;
+                        background: grey;
+
                     }
                  
 
