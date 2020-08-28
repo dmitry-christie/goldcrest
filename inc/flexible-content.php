@@ -1779,7 +1779,7 @@ button.swiper-pagination-bullet {
                         align-items: center;
                     }
 
-                    .timeline_stmap_item .line {
+                    .timeline_stamp_item .line {
                         height: 100%;
                         width: 1px;
                         background: grey;
@@ -1871,7 +1871,7 @@ button.swiper-pagination-bullet {
                                                 <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/images/icons-timeline/GC-ICON-' . $icon . '.png'; ?>">
 
                                             </div>
-                                            <div class="separator" ">
+                                            <div class="separator" >
                                                 <div class="circle">
                                                     <?php echo $k_timeline_stamp; ?>
                                                 </div>
