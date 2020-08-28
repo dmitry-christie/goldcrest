@@ -1772,9 +1772,22 @@ button.swiper-pagination-bullet {
                         text-transform: uppercase;
                     }
 
+                    .timeline_stmap_item .separator {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                 
+
                     .timeline_stamp .circle {
                         border: 1px solid grey;
-                        border-radisu: 50%;
+                        border-radius: 100%;
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
 
                     .timeline_stamp_item  .text p:first-of-type {
