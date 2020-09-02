@@ -2565,6 +2565,12 @@ td {
 
 		.header-cta-section h1 {
 			font-weight: 600;
+			font-size: 1.7em;
+		}
+
+		.page-title .txt-center-after  {
+			font-size: 1.7em;
+
 		}
 
 		.header-cta-section p {
