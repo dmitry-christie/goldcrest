@@ -233,6 +233,12 @@
                     
                     $add_grey_padding = get_sub_field('add_grey_padding');
                     if ($add_grey_padding): ?>
+
+                    <style>
+                        .blurbs .blurb {
+                          background-color: #404040;  
+                        }
+                    </style>
                     <div class="grey-padding">
 
                     
