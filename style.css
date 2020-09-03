@@ -1516,12 +1516,17 @@ footer .menu .separator {
 	margin-bottom: 2em;
 }
 
+
+.blurbs-type-1  {
+	background: white;
+}
 .guides {
     display: flex;
     justify-content: space-between;
 	flex-wrap: wrap;
 	margin-top: -30px;
 }
+
 
 @media (max-width: 1080px) {
 	.guides {
