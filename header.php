@@ -153,8 +153,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						}?>
 					</h1>
 					<?php if (is_single()): ?>
-						<div class="post-meta"> BY <?php $author_name = get_author_name(); echo $author_name; ?> Published on <?php echo get_the_date( 'F j, Y' ); ?>
-. Updated: <?php the_modified_date(); ?></div>
+						<!-- <div class="post-meta"> BY <?php $author_name = get_author_name(); echo $author_name; ?> Published on <?php echo get_the_date( 'F j, Y' ); ?>
+. Updated: <?php the_modified_date(); ?></div> -->
 					<?php endif; ?>
 
 
