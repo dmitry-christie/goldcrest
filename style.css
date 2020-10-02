@@ -1197,7 +1197,7 @@ margin: 0 auto;
 
 }
 
-.post .entry-content ul {
+.post .entry-content ul, .post .entry-content ol {
 	padding-left: 1em;
 	margin-bottom: 0.5em;
     font-family: 'Roboto', sans-serif;
@@ -2033,9 +2033,6 @@ td {
 
  
 
-     .tablepress .column-2,   .tablepress .column-3,   .tablepress .column-4,   .tablepress .column-5,   .tablepress .column-6,   .tablepress .column-7,   .tablepress .column-8,   .tablepress .column-9,   .tablepress .column-10,   .tablepress .column-11,   .tablepress .column-12,   .tablepress .column-13,   .tablepress .column-14,   .tablepress .column-15 {
-	text-align: center;
-}
 
 
 	
