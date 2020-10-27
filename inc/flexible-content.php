@@ -5,7 +5,7 @@ $id =  $post->ID;
 $page_id = get_queried_object_id();
 
 var_dump($id);
-
+echo 'test';
 var_dump($page_id);
 ?>
 
