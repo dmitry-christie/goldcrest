@@ -51,7 +51,7 @@ if (!$remove_the_classical_editor) {
         if ($enable_custom_editor) { 
             
             $stylesheet_root = get_stylesheet_directory();
-            include( $stylesheet_root . '/template-parts/inc/flexible-content.php' );
+            require( $stylesheet_root . '/template-parts/inc/flexible-content.php' );
 
         }
         
