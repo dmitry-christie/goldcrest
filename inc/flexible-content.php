@@ -1,5 +1,6 @@
 
-<?php $k = 0; ?>
+<?php echo 'test'; $k = 0; ?>
+
 
     <?php if( have_rows('flexible-content-pages') ): ?>
         <?php while( have_rows('flexible-content-pages') ): the_row(); ?>
