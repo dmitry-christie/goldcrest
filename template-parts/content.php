@@ -48,6 +48,8 @@ if (!$remove_the_classical_editor) {
 
         $enable_custom_editor = get_field('enable_custom_editor');
         if ($enable_custom_editor) { 
+
+            echo 'test';
             
             $stylesheet_root = get_stylesheet_directory();
             include( $stylesheet_root . '/template-parts/inc/flexible-content.php' );
