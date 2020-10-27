@@ -47,6 +47,8 @@ if (!$remove_the_classical_editor) {
 
 
         $enable_custom_editor = get_field('enable_custom_editor');
+
+        var_dump($enable_custom_editor);
         if ($enable_custom_editor) { 
 
             echo 'test';
