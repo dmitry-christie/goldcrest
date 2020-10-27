@@ -28,7 +28,11 @@
 		<?php
 /* $stylesheet_root = get_stylesheet_directory();
 include( $stylesheet_root . '/inc/flexible-content.php' ); */
+$remove_the_classical_editor = get_field('remove_the_classical_editor');
 
+
+
+if (!$remove_the_classical_editor) {
 	the_content();
 
 		wp_link_pages(
@@ -36,7 +40,20 @@ include( $stylesheet_root . '/inc/flexible-content.php' ); */
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'goldcrest' ),
 				'after'  => '</div>',
 			)
-		);
+        );
+
+}
+        
+
+
+        $enable_custom_editor = get_field('enable_custom_editor');
+        if ($enable_custom_editor) { 
+            
+            $stylesheet_root = get_stylesheet_directory();
+            include( $stylesheet_root . '/template-parts/inc/flexible-content.php' );
+
+        }
+        
 		?>
 
 		
