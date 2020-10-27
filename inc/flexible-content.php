@@ -2,11 +2,8 @@
 <?php echo 'test'; $k = 0; ?>
 <?php global $post;
 $id =  $post->ID; 
-$page_id = get_queried_object_id();
 
-var_dump($id);
-echo 'test';
-var_dump($page_id);
+
 ?>
 
     <?php if( have_rows('flexible-content-pages' , $id) ): ?>
