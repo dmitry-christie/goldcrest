@@ -1,6 +1,6 @@
 
 <?php echo 'test'; $k = 0; ?>
-<?php $id = get_the_ID(); echo $id; ?>
+<?php $id = get_the_ID(); var_dump($id); ?>
 
     <?php if( have_rows('flexible-content-pages' , $id) ): ?>
         <?php while( have_rows('flexible-content-pages', $id) ): the_row(); ?>
