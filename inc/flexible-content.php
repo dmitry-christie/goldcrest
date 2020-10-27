@@ -1,5 +1,5 @@
 
-<?php echo 'test'; $k = 0; ?>
+<?php  $k = 0; ?>
 <?php global $post;
 $id =  $post->ID; 
 
