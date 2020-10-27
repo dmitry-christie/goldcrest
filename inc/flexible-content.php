@@ -1,7 +1,9 @@
 
 <?php echo 'test'; $k = 0; ?>
 <?php global $post;
-$id =  $post->ID; ?>
+$id =  $post->ID; 
+
+var_dump($id);?>
 
     <?php if( have_rows('flexible-content-pages' , $id) ): ?>
         <?php while( have_rows('flexible-content-pages', $id) ): the_row(); ?>
