@@ -1,9 +1,9 @@
 
 <?php echo 'test'; $k = 0; ?>
+<?php $id = get_the_ID(); ?>
 
-
-    <?php if( have_rows('flexible-content-pages') ): ?>
-        <?php while( have_rows('flexible-content-pages') ): the_row(); ?>
+    <?php if( have_rows('flexible-content-pages' , $id) ): ?>
+        <?php while( have_rows('flexible-content-pages', $id) ): the_row(); ?>
 
             
 
