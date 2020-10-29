@@ -1182,12 +1182,28 @@ margin: 0 auto;
 
 .section-header, .visual-editor h2, .post .entry-content h2 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 2em;
+	font-size: 1.6em;
 	color: #004162;
 	margin-top: 0px;
 }
 
-.post .entry-content h2, .post .entry-content h3, .post .entry-content h4, .post .entry-content h5, .post .entry-content h6  {
+.post .entry-content h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.17em;
+	color: #b5a160;
+	margin-top: 0px;
+
+}
+
+.post .entry-content h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.1em;
+	color: #999999;
+	margin-top: 0px;
+
+}
+
+.post .entry-content h4, .post .entry-content h5, .post .entry-content h6  {
 	color: #004162;
 
 }
