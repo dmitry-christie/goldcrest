@@ -441,7 +441,7 @@ p {
 	margin-bottom: 0.5em;
 	font-family: 'Roboto', sans-serif;
 	color: #6d6e70;
-	font-weight: 300;
+	font-weight: 400;
 
 }
 
@@ -1179,25 +1179,24 @@ margin: 0 auto;
 }
 
 
-
 .section-header, .visual-editor h2, .post .entry-content h2 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 1.6em;
+	font-size: 1.8em;
 	color: #004162;
 	margin-top: 0px;
 }
 
-.post .entry-content h3 {
+.post .entry-content h3, .sc_card h3, .visual-editor h3 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 1.17em;
+	font-size: 1.5em;
 	color: #b5a160;
 	margin-top: 0px;
 
 }
 
-.post .entry-content h4 {
+.post .entry-content h4, .visual-editor h4 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	color: #999999;
 	margin-top: 0px;
 
@@ -1214,11 +1213,11 @@ margin: 0 auto;
 }
 
 .post .entry-content ul, .post .entry-content ol {
-	padding-left: 1em;
-	margin-bottom: 0.5em;
+    padding-left: 1em;
+    margin-bottom: 0.5em;
     font-family: 'Roboto', sans-serif;
     color: #6d6e70;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -1226,7 +1225,7 @@ margin: 0 auto;
 .post-meta {
 	color: white;
 	text-transform: uppercase;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 
@@ -1296,8 +1295,14 @@ header .button {
 .text_image {
     display: flex;
     justify-content: space-between;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    color: #6d6e70;
+    font-weight: 400;
     margin-top: 2em;
     margin-bottom: 2em;
+    margin-right: 2em;
 }
 
 .text_image>div {
