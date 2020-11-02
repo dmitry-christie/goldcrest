@@ -1164,7 +1164,7 @@ margin: 0 auto;
 .header-cta-section h1 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
-	font-size: 3em;
+	font-size: 2.6em;
 	text-align: center;
 }
 
@@ -1592,10 +1592,6 @@ footer .menu .separator {
 	font-size: 0.7em;
 
 }
-
-
-
-
 
 .tiles .left {
 	min-height: 400px;
@@ -2787,4 +2783,10 @@ td {
 	#footer-whatsapp {
 		display: none;
 	}
+}
+
+.post .entry-content img {
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
