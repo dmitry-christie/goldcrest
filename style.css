@@ -1094,6 +1094,8 @@ left: -13px;
 .top-bar #site-navigation li a {
 	margin-left: 20px;
 	text-transform: uppercase;
+	font-size: 0.9em;
+	letter-spacing: 1px;
 	color: white;
 }
 
@@ -1110,7 +1112,7 @@ left: -13px;
 }
 
 .scrolled {
-	background: rgba(0, 0, 0, 0.3);
+	background: #004162;
 }
 
 #masthead {
@@ -1125,8 +1127,8 @@ left: -13px;
 
 
 .site-branding img {
-	width: 300px;
-	max-width: 300px;
+	width: 250px;
+	max-width: 250px;
 	height: auto;
 }
 
@@ -1469,6 +1471,10 @@ font-weight: 300;
 	background-size: cover;
 } 
 
+.site-footer {
+  background-color: #f4f4f4;
+   margin:0 0 -30px 0
+}
 
 .site-footer .widgets {
 	display: flex;
@@ -1504,33 +1510,35 @@ footer .menu .separator {
 .copyright-container {
 	display: flex;
 	justify-content: space-between;
+	color: #004162;
+	font-weight: 400;
 }    
 
 
 #footer-whatsapp {
-	background-color: #e0c575;
+    background-color: #e0c575;
     display: flex;
     align-items: center;
-    padding: 0px 10px;
-    min-width: 300px;
+    padding: 30px;
+    min-width:300px
+    margin-left:0px
 }
 
 #footer-whatsapp a {
-	color: white;
-	display: flex;
-	align-items: center;
+    color: #fff;
+    display: flex;
+    align-items:center
 }
 
 #footer-whatsapp span {
-	text-transform: uppercase;
-    font-size: 1.5em;
+    text-transform: uppercase;
+    font-size: 1.2em;
     font-weight: 300;
-    margin-left: 10px;
+    margin-left:20px
 }
 
-
 .copyright-container p {
-	margin: 1.5em 0px;
+    margin:1.8em 0
 }
 
 .guides-outer  {
