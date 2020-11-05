@@ -2794,7 +2794,7 @@ td {
 	}
 }
 
-.post .entry-content img {
+.post .entry-content .visual-editor img {
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
