@@ -1182,14 +1182,14 @@ margin: 0 auto;
 }
 
 
-.section-header, .visual-editor h2, .post .entry-content h2 {
+.section-header, .visual-editor h2, .post .entry-content h2, .text_image h2 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.8em;
 	color: #004162;
 	margin-top: 0px;
 }
 
-.post .entry-content h3, .sc_card h3, .visual-editor h3 {
+.post .entry-content h3, .sc_card h3, .visual-editor h3, .text_image h3 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.5em;
 	color: #b5a160;
@@ -1875,6 +1875,7 @@ input[type='radio']:checked:after {
 	height: 350px;
 	border-radius: 2px;
 	background-size: cover;
+	background-position: center;
 	
 }
 
@@ -2794,8 +2795,8 @@ td {
 	}
 }
 
-.post .entry-content img {
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
+.post .entry-content img, .text_image img, .visual-editor img {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px
 }
