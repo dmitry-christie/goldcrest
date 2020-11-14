@@ -422,7 +422,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: #6d6e70;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -507,13 +507,14 @@ hr {
 }
 
 
-
 ul {
-	list-style: disc;
+    list-style:disc;
+    padding: 20px;
 }
 
 ol {
 	list-style: decimal;
+	padding: 20px;
 }
 
 li > ul,
@@ -554,17 +555,17 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+    color: #004162;
 }
 
 a:visited {
-	color: #800080;
+    color: #022239;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #191970;
+	color: #B5A160;
 }
 
 a:focus {
@@ -2795,7 +2796,7 @@ td {
 	}
 }
 
-.post .entry-content img, .text_image img, .visual-editor img {
+.post .entry-content img, .text_image img, .visual-editor img, .container img {
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px
