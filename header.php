@@ -76,7 +76,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <?php } ?>
 
 
-<?php if(the_field('remove_header') ) { ?>
+<?php 
+	$remove_header = get_field('remove_header');
+	
+	if($remove_header ) { ?>
 
 #masthead {
     max-height: 100px;         

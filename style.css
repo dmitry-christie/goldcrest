@@ -712,6 +712,9 @@ textarea {
 
 .main-navigation li {
 	position: relative;
+	height: 1em;
+    display: flex;
+    align-items: center;
 }
 
 .main-navigation a {
