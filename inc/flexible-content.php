@@ -1,4 +1,3 @@
-
 <?php  $k = 0; ?>
 <?php global $post;
 $id =  $post->ID; 
@@ -400,6 +399,64 @@ $id =  $post->ID;
                     ?>
                 </div>
             <!-- END step by step -->
+
+
+ <?php elseif( get_row_layout() == 'faqs' ): ?>
+                            <!-- FAQs -->
+
+              <?php $section_header = get_sub_field('section_header');  if($section_header) { ?><h2 class="section-header space sm-red-line"> <?php the_sub_field('section_header'); ?> </h2><?php }?>
+                        <?php if( have_rows('faq_item') ): ?>
+
+                                <?php $i = 0; ?>
+                                <?php while ( have_rows('faq_item') ) : the_row(); ?>
+                                    <section class="sc_fs_faq sc_card">
+                                        <div>
+                                            <h3><?php the_sub_field('question'); ?></h3>
+                                            <div>
+                                                <p><?php the_sub_field('answer'); ?></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <?php $i++; ?> 
+                                <?php endwhile; ?>
+
+
+                                    <?php $k = 0; ?>
+                                    <script type="application/ld+json">
+
+                                    {
+                                    "@context": "https://schema.org",
+                                    "@type": "FAQPage",
+                                    "mainEntity": [
+
+                                        <?php while ( have_rows('faq_item') ) : the_row(); ?>
+
+                                                {
+                                            "@type": "Question",
+                                            "name": "<?php the_sub_field('question'); ?>",
+                                            "acceptedAnswer": {
+                                                "@type": "Answer",
+                                                "text": "<?php $answer = get_sub_field('answer'); 
+                                                $answer = preg_replace('/(<[^>]+) style=".*?"/i', '$1', $answer);
+                                                $answer = preg_replace("/\"/", "'", $answer);
+                                                /* $answer = preg_replace('style="font-weight: 400;"', '', $answer);
+                                                $answer = preg_replace(';', '', $answer); 
+                                                $answer = preg_replace('{', '', $answer);
+                                                $answer = preg_replace('}', '', $answer);  */ 
+                                                echo $answer;
+                                                ?>"
+                                                                }
+                                        }<?php $k++; if ($i != $k) {echo ','; }?>
+                                        <?php endwhile; ?>
+                                        ]
+                                    }
+
+                                    </script>
+                                                                                    
+
+                        <?php endif; ?>
+                        <?php $k++; ?>
+            <!-- END FAQs -->
 
 
             
