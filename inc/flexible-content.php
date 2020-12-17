@@ -37,6 +37,8 @@ $id =  $post->ID;
  if ($add_grey_padding): ?>
                         
                     </div> <!-- grey padding -->
+                    <?php $k++; ?>
+
                 <?php endif; ?>
             <!-- END visual editor --> 
 
@@ -116,6 +118,8 @@ $id =  $post->ID;
  if ($add_grey_padding): ?>
                         
                     </div> <!-- grey padding -->
+                    <?php $k++; ?>
+
                 <?php endif; ?>
 
              <!-- Text and Image --> 
@@ -163,6 +167,8 @@ $id =  $post->ID;
                          
        
                    </div>
+                   <?php $k++; ?>
+
        
                     <!-- text_image_cta --> 
 
@@ -225,7 +231,8 @@ $id =  $post->ID;
                        ?>
        
                    </div>
-       
+                   <?php $k++; ?>
+
                     <!-- Text and 2 Images --> 
 
 
@@ -238,8 +245,54 @@ $id =  $post->ID;
                     $add_grey_padding = get_sub_field('add_grey_padding');
                     if ($add_grey_padding): ?>
 
+<style>
+										.blurbs-<?php echo $k; ?> .blurb {
+                                            display: flex;
+                                            justify-content: flex-start;
+                                            width: <?php switch ($blurbs_by_row) {
+                                                        case 6:
+                                                            echo '15%;';
+                                                            break;
+                                                        case 5:
+                                                            echo '17%;';
+                                                            break;
+                                                        case 4:
+                                                            echo '23%;';
+                                                            break;
+                                                        case 3:
+                                                            echo '30%;';
+                                                            break;
+                                                        
+                                                        default:
+                                                            echo '23%;';
+                                                        }?>;
+                                                    max-width: <?php switch ($blurbs_by_row) {
+                                                        case 6:
+                                                            echo '15%;';
+                                                            break;
+                                                        case 5:
+                                                            echo '17%;';
+                                                            break;
+                                                        case 4:
+                                                            echo '23%;';
+                                                            break;
+                                                        case 3:
+                                                            echo '30%;';
+                                                            break;
+                                                        
+                                                        default:
+                                                        echo '23%;';
+                                                    }?>;
+                                         
+                                                }
+
+
+									</style>
+
+
                   
                     <div class="grey-padding">
+                    <?php $k++; ?>
 
                     
                 <?php endif; ?>
@@ -248,10 +301,10 @@ $id =  $post->ID;
 
              <?php $header = get_sub_field('header'); if($header) { ?><h2 class="section-header txt-center sm-gold-line space" data-aos="fade-up"> <?php the_sub_field('header'); ?> </h6> <?php } ?>
                         <?php if( have_rows('blurb_type_1_repeater') ): ?>
-                            <div class="blurbs blurbs-type-1 space container" data-aos="fade-up">
+                            <div class="blurbs blurbs-type-1 space container blurbs-<?php echo $k; ?>" data-aos="fade-up">
                                 <?php while ( have_rows('blurb_type_1_repeater') ) : the_row(); ?>
 
-                                    <div class="blurb txt-center">
+                                    <div class="blurb txt-center blurb-<?php echo $i; if($i > 5) { echo ' row-2';}?>">
                                         <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/images/icons/GC-ICON-' . $icon . '.png'; ?>">
                                         <?php $header = get_sub_field('header'); if($header) { ?><h3 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h3> <?php } ?>
                                         <span> <?php the_sub_field('text'); ?></span>
@@ -278,7 +331,8 @@ $id =  $post->ID;
                     if ($add_grey_padding): ?>
                     <div class="grey-padding">
 
-                    
+                    <?php $k++; ?>
+
                 <?php endif; ?>
 
 
@@ -307,6 +361,8 @@ $id =  $post->ID;
  if ($add_grey_padding): ?>
                         
                     </div> <!-- grey padding -->
+                    <?php $k++; ?>
+
                 <?php endif; ?>
             <!-- END blurbs type 2 -->
 
@@ -345,6 +401,8 @@ $id =  $post->ID;
                                     <?php $k_blurbs_type_3++;?>
                                     <?php endwhile; ?>
                             </div>
+                            <?php $k++; ?>
+
                         <?php endif; ?>
 
 
@@ -398,6 +456,8 @@ $id =  $post->ID;
                             }
                     ?>
                 </div>
+                <?php $k++; ?>
+
             <!-- END step by step -->
 
 
