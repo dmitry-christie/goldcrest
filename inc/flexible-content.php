@@ -241,7 +241,7 @@ $id =  $post->ID;
              <!-- blurbs type 1 -->
              <?php elseif( get_row_layout() == 'blurbs_type_1' ): ?>
                 <?php 
-                    
+                    $blurbs_by_row = get_sub_field('blurbs_by_row');
                     $add_grey_padding = get_sub_field('add_grey_padding');
                     if ($add_grey_padding): ?>
 
@@ -266,7 +266,7 @@ $id =  $post->ID;
                                                         
                                                         default:
                                                             echo '23%;';
-                                                        }?>;
+                                                        }?>
                                                     max-width: <?php switch ($blurbs_by_row) {
                                                         case 6:
                                                             echo '15%;';
@@ -283,7 +283,7 @@ $id =  $post->ID;
                                                         
                                                         default:
                                                         echo '23%;';
-                                                    }?>;
+                                                    }?>
                                          
                                                 }
 
