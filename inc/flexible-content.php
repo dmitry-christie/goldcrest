@@ -249,6 +249,7 @@ $id =  $post->ID;
 										.blurbs-<?php echo $k; ?> .blurb {
                                             display: flex;
                                             justify-content: flex-start;
+                                            flex-direction: column;
                                             width: <?php switch ($blurbs_by_row) {
                                                         case 6:
                                                             echo '15%;';
@@ -286,6 +287,12 @@ $id =  $post->ID;
                                          
                                                 }
 
+                                                .blurbs-<?php echo $k; ?> .blurb img {
+                                                    max-width: 100px;
+                                                    height: auto;
+                                                    margin: 0 auto;
+                                                }
+
 
 									</style>
 
@@ -296,7 +303,7 @@ $id =  $post->ID;
 
                     
                 <?php endif; ?>
-
+                <?php $i = 0; ?>
 
 
              <?php $header = get_sub_field('header'); if($header) { ?><h2 class="section-header txt-center sm-gold-line space" data-aos="fade-up"> <?php the_sub_field('header'); ?> </h6> <?php } ?>
