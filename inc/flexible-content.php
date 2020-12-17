@@ -1560,18 +1560,21 @@ button.swiper-pagination-bullet {
 
                 
                 .pagination-map .swiper-pagination-bullet-active.Lisboa:before {
-                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-Lisboa.png);
+                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-lisbon.png);
                     visibility: visible;
                     opacity: 1;
                    
                 }
 
                 .pagination-map .swiper-pagination-bullet-active.Algarve:before {
-                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-Algarve.png);
+                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-faro.png);
                     visibility: visible;
                     opacity: 1;
                    
                 }
+
+               
+
                 .pagination-map .swiper-pagination-bullet-active.Centro:before {
                     content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-coimbra.png);
                     visibility: visible;
@@ -1580,7 +1583,7 @@ button.swiper-pagination-bullet {
                 }
 
                 .pagination-map .swiper-pagination-bullet-active.Alentejo:before {
-                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-Alentejo.png);
+                    content: url(<?php echo get_template_directory_uri(); ?>/images/slider_pointer-evora.png);
                     visibility: visible;
                     opacity: 1;
                    
