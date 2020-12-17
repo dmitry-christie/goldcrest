@@ -1513,8 +1513,8 @@ button.swiper-pagination-bullet {
 
                 .pagination-map .Algarve {
                     position: relative;
-                    left: 140px;
-                    top: 550px;
+                    left: 158px;
+                    top: 565px;
                 }
 
                 .pagination-map .swiper-pagination-bullet-active.Algarve {
@@ -1537,7 +1537,7 @@ button.swiper-pagination-bullet {
                 .pagination-map .Alentejo {
                     position: relative;
                     left: 150px;
-                    top: 330px;
+                    top: 380px;
                 }
 
                 .pagination-map .swiper-pagination-bullet-active.Alentejo {
