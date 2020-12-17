@@ -245,7 +245,16 @@ $id =  $post->ID;
                     $add_grey_padding = get_sub_field('add_grey_padding');
                     if ($add_grey_padding): ?>
 
-<style>
+
+
+
+                  
+                    <div class="grey-padding">
+                   
+
+                    
+                <?php endif; ?>
+                <style>
 										.blurbs-<?php echo $k; ?> .blurb {
                                             display: flex;
                                             justify-content: flex-start;
@@ -295,14 +304,6 @@ $id =  $post->ID;
 
 
 									</style>
-
-
-                  
-                    <div class="grey-padding">
-                   
-
-                    
-                <?php endif; ?>
                 <?php $i = 0; ?>
 
 
