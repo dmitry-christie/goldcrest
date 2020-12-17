@@ -1489,13 +1489,13 @@ button.swiper-pagination-bullet {
 
                 .pagination-map .Porto {
                     position: relative;
-                    left: 90px;
-                    top: 100px;
+                    left: 100px;
+                    top: 80px;
                 }
 
                 .pagination-map .swiper-pagination-bullet-active.Porto {
-                    left: 70px;
-                    top: 80px;
+                    left: 80px;
+                    top: 40px;
                 }
 
                
@@ -1524,13 +1524,13 @@ button.swiper-pagination-bullet {
 
                 .pagination-map .Centro {
                     position: relative;
-                    left: 110px;
-                    top: 200px;
+                    left: 150px;
+                    top: 170px;
                 }
 
                 .pagination-map .swiper-pagination-bullet-active.Centro {
-                    left: 95px;
-                    top: 150px;
+                    left: 135px;
+                    top: 130px;
                 }
 
 
@@ -1600,12 +1600,7 @@ button.swiper-pagination-bullet {
                     text-align: right;
                 }
 
-                @media (min-width: 1300px) {
-                    .swiper-slide .text {
-                        right: calc((100vw - 1080px) * -1);
-
-                    }
-                }
+              
 
                 .slider_sub-header {
                     color: white !important;
