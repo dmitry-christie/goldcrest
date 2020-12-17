@@ -292,7 +292,7 @@ $id =  $post->ID;
 
                   
                     <div class="grey-padding">
-                    <?php $k++; ?>
+                   
 
                     
                 <?php endif; ?>
@@ -319,6 +319,7 @@ $id =  $post->ID;
  if ($add_grey_padding): ?>
                         
                     </div> <!-- grey padding -->
+                    <?php $k++; ?>
                 <?php endif; ?>
             <!-- END blurbs type 1 -->
 
