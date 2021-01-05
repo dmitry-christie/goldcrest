@@ -750,10 +750,10 @@ textarea {
 
 
 #site-navigation .sub-menu {
-padding-top: 10px;
-background: rgba(0,0,0,0);
-left: -13px;
-margin: 0px;		
+    padding-top: 20px;
+    background: #fff;
+    left: 20px;
+    margin:0px;
 }
 
 #site-navigation .sub-menu .menu-item {
@@ -761,20 +761,14 @@ margin: 0px;
  padding:10px;
 }
 
-
-#site-navigation .sub-menu .menu-item {
-	background: white;
-	padding:10px;
-   }
-
-   #site-navigation .sub-menu li a {
+#site-navigation .sub-menu li a {
 	   color: #e0c575 !important;
    }
 
 
 #site-navigation .sub-menu li{
 	font-size: 14px;
-	line-height: 1.4;
+	line-height: 1.6;
 	padding-bottom: 20px;
 	   
 }
